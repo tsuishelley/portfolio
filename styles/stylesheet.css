@@ -1,81 +1,85 @@
-img {
-    width:100%;
-}
-h1{
-    font-family:Arial, Helvetica, sans-serif;
-    color:white;
-    margin-left: 1rem;
-    font-size: 5rem;
-}
-h2{
-    font-family:Arial, Helvetica, sans-serif;
-    width: 50%;
-    color:white;
-    margin-left: 1rem;
-    font-size: 3rem;
-}
-h3{
-    font-family:Arial, Helvetica, sans-serif;
-    width:50%;
-    color:white;
-    font-weight: 600;
-    font-size: 2rem;
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&family=Public+Sans:wght@300&display=swap');
 p {
-    font-family:Arial, Helvetica, sans-serif;
-    color:white;
-    opacity:50%;
+    font-family: 'Public Sans', sans-serif;
 }
-article {
-    padding:2rem;
-    width: 30%;
-    background-color:#2A2A2A;
-    border-radius: 20px;
-    margin-bottom:50px;
-    margin-top: 50px;
-    margin-left: 1rem;
-    line-height: 140%;
-    
-}
-article:hover{
-    background-color:#404040;
-}
+
 body {
-    background-color:#121212;
+    background-color: #F2F2F2;
+    margin:0;
+    color:#262626;
+
 }
-a{
-    color:white;
+.dark-mode {
+    background-color: #141414;
+    color: #F2F2F2;
+  }
+
+  a {
     text-decoration: none;
-}
-a:hover{
-    text-decoration:underline;
-}
-footer{
-    margin-left: 1rem;
-    margin-bottom:2rem;
-}
-
-.about-me {
-    padding:0rem;
-    width: 50%;
-    margin-left: 1rem;
-    line-height: 140%;
-    font-size: 2rem;
-}
-
-li {
-    display: inline;
-    padding-right: 25px;
+    color:#262626;
 }
 
 .navigation {
-    font-family:Arial, Helvetica, sans-serif;
-    width: 50%;
-    margin:2rem;
-    margin-left: 1rem;
-    padding:0rem;
+    font-family: 'Public Sans', sans-serif;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 1% 4% 1% 4%;
+    font-size:1.1rem;
 }
 
 hr {
-    opacity:0.1;
+    width: 100%;
+}
+
+h1 {
+    margin: 3% 4% 10% 4%;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 300;
+    font-size: 3rem;
+    max-width: 1000px;
+    line-height: 115%;
+}
+
+h2 {
+    margin: 3% 0% 2% 4%;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 300;
+    font-size: 2rem;
+    width: 70%;
+    line-height: 130%;
+}
+
+.projects {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1% 4% 1% 4%;
+}
+
+.tiles {
+    margin-bottom: 7%;
+}
+
+.tile-text {
+    margin-top: 5px;
+    max-width: 650px;
+}
+
+img {
+    height: 400px;
+    width: 650px;
+    border-radius: 15pt;
+}
+
+p {
+    line-height: 150%;
+    font-size:1.1rem;
+}
+
+footer {
+    background-color: #141414;
+    height: 400px;
 }
