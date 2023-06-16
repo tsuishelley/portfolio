@@ -38,6 +38,7 @@ body {
 
 .about-text {
     margin-top:3%;
+    max-width: 600px;
 }
 
 hr {
@@ -88,7 +89,6 @@ img {
 p {
     line-height: 150%;
     font-size:1.1rem;
-    max-width: 600px;
 }
 
 footer {
