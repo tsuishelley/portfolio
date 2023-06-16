@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&family=Public+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&family=IBM+Plex+Serif:wght@300&display=swap');
 p {
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 body {
@@ -20,13 +20,24 @@ body {
 }
 
 .navigation {
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
     margin: 1% 4% 1% 4%;
     font-size:1.1rem;
+}
+
+.about {
+    display:flex;
+    flex-direction:row;
+    align-items:stretch;
+    flex-wrap:wrap;
+}
+
+.about-text {
+    margin-top:3%;
 }
 
 hr {
@@ -77,9 +88,11 @@ img {
 p {
     line-height: 150%;
     font-size:1.1rem;
+    max-width: 600px;
 }
 
 footer {
     background-color: #141414;
     height: 400px;
+    margin-top: 7%;
 }
