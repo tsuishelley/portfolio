@@ -7,6 +7,13 @@
         <script src="https://kit.fontawesome.com/474260a395.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <script>
+            function myFunction()
+            {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            }
+        </script>
         <header>
             <nav>
                 <section class="navigation">
@@ -19,9 +26,7 @@
                     <div>
                     <a href="about-me.html">About</a>
                     </div>
-                    <div>
-                        <a href="index.html"><i class="fa-solid fa-cat"></i></a>
-                    </div>
+                    <button onclick="myFunction()"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></button>
                     </section>
             </nav>
             <hr>

@@ -7,17 +7,42 @@ body {
     background-color: #F2F2F2;
     margin:0;
     color:#262626;
+    transition: background-color 0.5s;
 
 }
 .dark-mode {
-    background-color: #141414;
+    background-color: #262626;
     color: #F2F2F2;
   }
 
-  a {
-    text-decoration: none;
-    color:#262626;
+.dark-mode a {
+        text-decoration: none;
+        color: #f2f2f2;
 }
+
+.dark-mode footer{
+    background-color: #f2f2f2;
+}
+
+.dark-mode button {
+    border:none;
+    background-color:transparent;
+    color:#F2F2F2;
+}
+
+.dark-mode hr {
+    color: #7e7e7e;
+}
+
+a {
+    text-decoration: none;
+    color: #262626;
+}
+
+button {
+    border: none;
+    background-color:transparent;
+  }
 
 .navigation {
     font-family: 'IBM Plex Sans', sans-serif;
@@ -43,6 +68,8 @@ body {
 
 hr {
     width: 100%;
+    border:0.5px solid;
+    color:#afafaf;
 }
 
 h1 {
@@ -75,6 +102,14 @@ h2 {
     margin-bottom: 7%;
 }
 
+.tiles img {
+    transition: transform .2s ease-in-out;
+}
+
+.tiles img:hover {
+    transform:scale(1.05);
+}
+
 .tile-text {
     margin-top: 5px;
     max-width: 650px;
@@ -92,7 +127,7 @@ p {
 }
 
 footer {
-    background-color: #141414;
+    background-color: #262626;
     height: 400px;
     margin-top: 7%;
 }
