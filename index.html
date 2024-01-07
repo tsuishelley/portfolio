@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Shelley Tsui</title>
         <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <script src="https://kit.fontawesome.com/474260a395.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -18,87 +19,125 @@
             <nav>
                 <section class="navigation">
                     <div>
-                        <a href="index.html">Work</a>
+                        <a href="index.html">Works</a>
                     </div>
                     <div>
                         <a href="index.html">Resume</a>
                     </div>
                     <div>
-                    <a href="about-me.html">About</a>
+                    <a href="mailto:tsuishelley@gmail.com">Email</a>
                     </div>
-                    <button onclick="myFunction()"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></button>
+                    <div>
+                        <button onclick="myFunction()"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></button>
+                    </div>
                     </section>
             </nav>
-            <hr>
         </header>
-        <h1>User experience designer based in rainy Seattle. Well-versed in design, research, front-end development, and cats.</h1>
-        <hr>
-        <h2>Projects</h2>
+        <h1 id="intro">Hi, I'm Shelley! I'm a user experience designer based in <span class="italic-blue" id="seattle">Seattle</span>. I'm well-versed in front-end development, design, and <span class="italic-blue" id="cats">cats</span>.</h1>
         <section class="projects">
             <div class="tiles">
-                <img src="images/antologi.png" alt="Mockup of a phone with video UI and the text 'Catching up has never been easier'">
+                <img src="images/antologi-pic.svg">
                 <div class="tile-text">
                     <p>A startup in Google's Area 120 incubator focused on promoting better async work for people by using ML to synthesize meeting recordings.</p>
                     </div>
             </div>
             <div class="tiles">
-                <img src="images/milo.png" alt="Screenshot of a pet supplement website">
+                <img src="images/mrdd.svg">
                 <div class="tile-text">
-                    <p>A brand identity for a DTC pet health startup focused on creating supplements bespoke to your pup and their individual needs.</p>
+                    <p>Developing signage and brand material for Mixed Reality Developer Program and Mixed Reality Dev Days, a public MR/VR hackathon hosted by Microsoft.</p>
                     </div>
             </div>
             <div class="tiles">
-                <img src="images/twl.png" alt="Page designs featuring dogs and cats with handwritten text">
-                <div class="tile-text">
-                    <p>A compilation of essays and interviews about the highs and lows of pet ownership that also doubles as a love letter to all the pets I've ever met.</p>
-                    </div>
-            </div>
-            <div class="tiles">
-                <img src="images/xembly.png" alt="Screenshot of a website focused on meeting notes and automated scheduling">
+                <img src="images/xembly-pic.svg">
                 <div class="tile-text">
                     <p>Featuring Xena, an AI chief of staff that supports you in your work and personal life by taking care of the mundane so you can focus on what's meaningful.</p>
                     </div>
             </div>
             <div class="tiles">
-                <img src="images/chord.png" alt="Photo of someone holding an illustrated playing card with a mountain">
+                <img src="images/twl-pic.svg">
+                <div class="tile-text">
+                    <p>A compilation of essays and interviews about the highs and lows of pet ownership that also doubles as a love letter to all the pets I've ever met.</p>
+                    </div>
+            </div>
+            <div class="tiles">
+                <img src="images/milo-pic.svg">
+                <div class="tile-text">
+                    <p>A brand identity for a DTC pet health startup focused on creating supplements bespoke to your pup and their individual needs.</p>
+                    </div>
+            </div>
+            <div class="tiles">
+                <img src="images/chord-pic.svg">
                 <div class="tile-text">
                     <p>Developing a meaningful way for nomadic people to maintain their relationships and create new ones by sharing their own transient experiences.</p>
                     </div>
             </div>
-            <div class="tiles">
-                <img src="images/periodical.png" alt="Mockup showing the desktop and mobile version of a news site">
-                <div class="tile-text">
-                    <p>A platform designed to empower jaded news readers to engage with their local community and go beyond the confines of social media.</p>
-                    </div>
-            </div>
         </section>
-        <footer>
-            <div class="contact-form">
-                <form method="GET">
-                    <label>Hi, my name is 
-                        <input type="text" name="applicantName" placeholder="Keanu Reeves">
-                    </label>
-        
-                    <label>and my email is
-                        <input type="email" name="applicantEmail" placeholder="keanu@reeves.com">
-                    </label>
-            
-                    <label>. You can call (or text me) at the number
-                        <input type="tel" name="applicantPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789">
-                    </label>
-            
-                    <label>. I would love your help with
-                        <input type ="text" name="designRequest" placeholder="revenging my dog">
-                    </label>
-                    <label>If you could reach out to me by this date, I would appreciate it:
-                        <input type="date" name="projectDeadline">
-                    </label>
-
-                    <br>
-                    <br>
-                    <input type="submit" value="Drop a line">
-                    </form>
+        <div class="grid-container">
+            <div class="grid-row">
+                <div class="grid-cell cell-heading">Title</div>
+                <div class="grid-cell wider-cell cell-heading">Description</div>
+                <div class="grid-cell cell-heading">Type</div>
             </div>
+            <div class="grid-row">
+                <div class="grid-cell">Unsent Letters</div>
+                <div class="grid-cell wider-cell">A publication compiled of things people wish they had said.</div>
+                <div class="grid-cell">Publication Design</div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-cell">Care Goals Guide</div>
+                <div class="grid-cell wider-cell">Supporting patients with cancer in goals of care discussions.</div>
+                <div class="grid-cell">Research, UX</div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-cell">Periodical</div>
+                <div class="grid-cell wider-cell">Empowering news readers to engage with their local community.</div>
+                <div class="grid-cell">Brand, UX</div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-cell">Pixel Music Fest</div>
+                <div class="grid-cell wider-cell">A mobile-design for a music festival celebrating indie game devs.</div>
+                <div class="grid-cell">Brand, Mobile</div>
+            </div>
+        </div>
+        <footer>
+            <div class = "about-section">
+            <div>
+                <img src="images/my-dumb-face.png">
+            </div>
+            <div id = "about-me">
+                <h2>
+                    Nice to meet you! &#128075;
+                </h2>
+                <p>
+                    I graduated from the University of Washington with a Bachelor of Design in visual communication and a minor in
+                     informatics. Right now I'm an experience designer at September Works. Some clients I've worked with include 
+                     Microsoft, Google, The New York Times, and Promethean. <br><br>Beyond the 9-5 (technically 8-4), I'm an avid fan of 
+                     video games, my own mediocre baking, and my two tripod dogs. I am only somewhat a fan of my cat and if you met 
+                     him you would understand. <br><br>Feel free to reach out for any reason! I'm always interested in new opportunities 
+                     and a nice, warm cup of tea.
+                </p>
+            </div>
+        </div>
         </footer>
+        <div class="ticker-wrap">
+            <div class="ticker">
+              <span class="item-collection-1">
+                <span class="item">Do something nice today! &#127804;</span>
+                <span class="item">Do something nice today! &#127804;</span>
+                <span class="item">Do something nice today! &#127804;</span>
+                <span class="item">Do something nice today! &#127804;</span>
+                <span class="item">Do something nice today! &#127804;</span>
+                <span class="item">Do something nice today! &#127804;</span>
+              </span>
+              <span class="item-collection-2">
+                <span class="item">Do something nice today! &#127804;</span>
+                <span class="item">Do something nice today! &#127804;</span>
+                <span class="item">Do something nice today! &#127804;</span>
+                <span class="item">Do something nice today! &#127804;</span>
+                <span class="item">Do something nice today! &#127804;</span>
+                <span class="item">Do something nice today! &#127804;</span>
+              </span>
+            </div>
+          <div>
     </body>
  </html>
