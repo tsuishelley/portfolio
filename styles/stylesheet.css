@@ -292,8 +292,9 @@ footer {
   .about-section {
     display:flex;
     align-items: center;
-    gap:6rem;
-    padding: 6rem 12rem 6rem 12rem;
+    padding: 5% 5% 5% 5%;
+    justify-content:center;
+    gap:4rem;
   }
 
   #about-me {
@@ -301,10 +302,10 @@ footer {
   }
 
   @media (max-width: 1000px) {
-    .about-section {
-        flex-direction: column;
-        gap:0rem;
-        padding: 6rem 3rem 6rem 3rem;
+
+    #about-me h2 {
+        max-width:100%;
+        padding-top:1rem;
     }
 
     h1 {
