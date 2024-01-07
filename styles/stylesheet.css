@@ -326,7 +326,7 @@ footer {
 
   @media (max-width: 760px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
         padding: 0rem 3rem 0rem 3rem;
     }
     
@@ -334,11 +334,11 @@ footer {
         padding-right: 3rem;
     }
     .projects {
-        padding: 6rem 3rem 3rem 3rem;
+        padding: 3rem 3rem 3rem 3rem;
     }
     .tiles {
         max-width:100%;
-        padding-top: 1rem;
+        padding-top: 0rem;
     }
     .grid-container {
         padding: 6rem 3rem 0rem 3rem;
@@ -351,14 +351,32 @@ footer {
     #about-me {
         max-width:100%;
     }
+    #about-me h2 {
+        max-width:100%;
+        padding-top:1rem;
+    }
     .about-section img {
-        max-width:70%;
+        max-width:100%;
     }
     #seattle {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
-
     #cats {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+    .grid-container {
+        display:none;
+    }
+    footer {
+        margin-top:0rem;
+    }
+    nav {
+        height: 3rem;
+        padding-right: 0rem;
+        padding-left:3rem;
+    }
+    .navigation div {
+        float:left;
+        padding:2rem 1rem 2rem 0rem;
     }
   }
