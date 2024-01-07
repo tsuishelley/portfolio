@@ -292,7 +292,7 @@ footer {
   .about-section {
     display:flex;
     align-items: center;
-    padding: 5% 5% 5% 5%;
+    padding: 6rem 3rem 6rem 3rem;
     justify-content:center;
     gap:4rem;
   }
@@ -385,5 +385,68 @@ footer {
     }
     .tiles {
         padding-bottom: 3rem;
+    }
+  }
+
+
+  @media (max-width: 500px) {
+    h1 {
+        font-size: 2.2rem;
+        padding: 0rem 2rem 4rem 2rem;
+    }
+    
+    nav {
+        padding-right: 2rem;
+    }
+    .projects {
+        padding: 2rem 2rem 2rem 2rem;
+    }
+    .tiles {
+        max-width:100%;
+        padding-top: 0rem;
+    }
+    .grid-container {
+        padding: 4rem 2rem 0rem 2rem;
+    }
+    .about-section {
+        gap:0rem;
+        padding: 4rem 2rem 4rem 2rem;
+    }
+    #about-me {
+        max-width:100%;
+    }
+    #about-me h2 {
+        max-width:100%;
+        padding-top:1rem;
+    }
+    .about-section img {
+        max-width:80%;
+    }
+    #seattle {
+        font-size: 2.2rem;
+    }
+    #cats {
+        font-size: 2.2rem;
+    }
+    .grid-container {
+        display:none;
+    }
+    footer {
+        margin-top:0rem;
+    }
+    nav {
+        height: 3rem;
+        padding-right: 0rem;
+        padding-left:2rem;
+    }
+    .navigation div {
+        float:left;
+        padding:2rem 1rem 2rem 0rem;
+    }
+    .tile-text {
+        display:none;
+    }
+    .tiles {
+        padding-bottom: 2rem;
     }
   }
