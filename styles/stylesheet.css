@@ -380,9 +380,6 @@ footer {
         float:left;
         padding:2rem 1rem 2rem 0rem;
     }
-    .tile-text {
-        display:none;
-    }
     .tiles {
         padding-bottom: 3rem;
     }
@@ -443,9 +440,7 @@ footer {
         float:left;
         padding:2rem 1rem 2rem 0rem;
     }
-    .tile-text {
-        display:none;
-    }
+
     .tiles {
         padding-bottom: 2rem;
     }
