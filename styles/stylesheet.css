@@ -298,14 +298,16 @@ footer {
   }
 
   #about-me {
-    max-width:50%;
+    max-width:40%;
   }
+  #about-me h2 {
+    max-width:100%;
+}
 
   @media (max-width: 1000px) {
 
     #about-me h2 {
         max-width:100%;
-        padding-top:1rem;
     }
 
     h1 {
