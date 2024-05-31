@@ -15,7 +15,7 @@ nav button {
 
 h1 {
     font-family: source-serif-pro, serif;
-    color: #131313;
+    color: #3E3E3E;
     font-size: 3rem;
     font-style: normal;
     font-weight: 300;
@@ -76,7 +76,7 @@ h1 {
 
 h2 {
     font-family: source-serif-pro, serif;
-    color: #131313;
+    color: #3E3E3E;
     font-size: 2rem;
     font-style: normal;
     font-weight: 300;
@@ -90,7 +90,7 @@ h2 {
     border-top:1px solid #898989;
     width: 100%;
     font-family: 'Public Sans', sans-serif;
-    color:#131313;
+    color:#3E3E3E;
     font-size: 1.05rem;
     display:flex;
     padding: 20px 0px 20px 0px;
@@ -154,7 +154,7 @@ h2 {
 
 ::selection {
     color: white;
-    background: #377EF7;
+    background: #3E3E3E;
   }
 
 p {
@@ -162,16 +162,16 @@ p {
     font-style: normal;
     line-height: 150%;
     font-size: 1.05rem;
-    color: #131313;
+    color: #3E3E3E;
 }
 
 #intro {
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 .italic-blue {
     font-family: source-serif-pro, serif;
-    color: #377EF7;
+    color: #3E3E3E;
     font-size: 3rem;
     font-style: italic;
     font-weight: 300;
@@ -212,7 +212,7 @@ a:hover {
     font-weight:400;
     font-size: .9rem;
     color: white;
-    background-color: #13131330;
+    background-color: #3E3E3E30;
     padding: .5em 1em .5em 1em;
     border-radius: .5rem;
   }
@@ -255,7 +255,7 @@ nav a {
     font-style: normal;
     font-weight:400;
     font-size: .9rem;
-    color: #131313;
+    color: #3E3E3E;
     text-decoration: none;
     background-color: #f3f3f3;
     padding: .5em 1em .5em 1em;
@@ -263,7 +263,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #377EF7;
+    background-color: #3E3E3E;
     color:white;
     transition-duration: .5s;
 }
@@ -301,7 +301,7 @@ nav {
 
 
 footer {
-    background-color: #F2F2F2;
+    background-color: #F9F9F9;
     margin-top: 12rem;
 }
 
@@ -319,7 +319,7 @@ footer {
     position: relative;
     bottom: 0;
     height: 3rem;
-    background-color: #377EF7;
+    background-color: #3E3E3E;
   }
   .ticker {
     display: inline-block;
@@ -368,13 +368,12 @@ footer {
   .about-section {
     display:flex;
     align-items: left;
-    padding: 6rem 6rem 6rem 6rem;
+    padding: 4rem 6rem;
     justify-content:start;
   }
 
   .about-section a {
-    color: #377EF7;
-    text-decoration:none;
+    color: #3E3E3E;
 
   }
 
