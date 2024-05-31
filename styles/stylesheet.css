@@ -540,11 +540,13 @@ footer {
 
   @media (max-width: 500px) {
     h1 {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         padding: 0rem 1rem;
     }
 
     #intro {
+        font-size: 1.5rem;
+
         padding:1rem 1.5rem;
     }
     
@@ -573,15 +575,16 @@ footer {
     #about-me h2 {
         max-width:100%;
         padding-top:1rem;
+        font-size: 1.5rem;
     }
     .about-section img {
         max-width:100%;
     }
     #seattle {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
     }
     #cats {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
     }
     footer {
         margin-top:0rem;
@@ -607,6 +610,7 @@ footer {
 
     .project-section img {
         width:100%;
+        object-fit: cover;
     }
 
     .container {
@@ -620,5 +624,13 @@ footer {
     }
     #project-title{
         padding:0 1.5rem;
+        
+    }
+    h2 {
+        font-size: 1.5rem;
+
+    }
+    .tile-text {
+        display:none;
     }
   }
