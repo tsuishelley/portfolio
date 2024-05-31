@@ -6,6 +6,7 @@ body {
     padding: 0rem 0rem 0rem 0rem;
     margin: 0rem 0rem 0rem 0rem;
     transition:.5s;
+    background-color: #FFFEFA;
 }
 
 nav button {
@@ -86,7 +87,6 @@ h2 {
 
 .accordion {
     cursor: pointer;
-    background-color:white;
     border-top:1px solid #898989;
     width: 100%;
     font-family: 'Public Sans', sans-serif;
@@ -257,7 +257,7 @@ nav a {
     font-size: .9rem;
     color: #3E3E3E;
     text-decoration: none;
-    background-color: #f3f3f3;
+    background-color: #F4F2EC;
     padding: .5em 1em .5em 1em;
     border-radius: .5rem;
 }
@@ -301,7 +301,7 @@ nav {
 
 
 footer {
-    background-color: #F9F9F9;
+    background-color: #F4F2EC;
     margin-top: 12rem;
 }
 
@@ -367,9 +367,8 @@ footer {
 
   .about-section {
     display:flex;
-    align-items: left;
     padding: 4rem 6rem;
-    justify-content:start;
+    justify-content:center;
   }
 
   .about-section a {
