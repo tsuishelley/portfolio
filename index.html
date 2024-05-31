@@ -5,122 +5,134 @@
         <title>Shelley Tsui</title>
         <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
-        <script src="https://kit.fontawesome.com/474260a395.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <script>
-            function myFunction()
-            {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
             }
-        </script>
+        });
+    }
+});
+    </script>
         <header>
             <nav>
                 <section class="navigation">
                     <div>
-                        <a href="index.html">Works</a>
-                    </div>
-                    <div>
-                        <a href="assets/tsui-shelley-resume.pdf">Resume</a>
+                        <a href="assets/tsui-shelley-resume.pdf" target="_blank">Resume</a>
                     </div>
                     <div>
                     <a href="mailto:tsuishelley@gmail.com">Email</a>
                     </div>
                     <div>
-                        <button onclick="myFunction()"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></button>
-                    </div>
+                      <a href="index.html">Works</a>
+                  </div>
                     </section>
             </nav>
         </header>
-        <h1 id="intro">Hi, I'm Shelley! I'm an experience designer based in <span class="italic-blue" id="seattle">Seattle</span>. I'm well-versed in front-end development, design, and <span class="italic-blue" id="cats">cats</span>.</h1>
+        <h1 id="intro">Hi there, I'm a user experience & visual designer based in <a href="https://www.seattlesouthside.com/" target="_blank" class="italic-blue" id="seattle">rainy Seattle</a>. I'm versed in front-end development, design, and <a href="https://www.youtube.com/watch?v=z3U0udLH974" target="_blank" class="italic-blue" id="cats">cats</a>.</h1>
         <section class="projects">
             <div class="tiles">
-                <img src="images/antologi-pic.svg">
+                <a href="antologi.html"><img src="images/antologi-pic.png"></a>
                 <div class="tile-text">
                     <p>A startup in Google's Area 120 incubator focused on promoting better async work for people by using ML to synthesize meeting recordings.</p>
                     </div>
             </div>
             <div class="tiles">
-                <img src="images/mrdd.svg">
-                <div class="tile-text">
-                    <p>Developing signage and brand material for Mixed Reality Developer Program and Mixed Reality Dev Days, a public MR/VR hackathon hosted by Microsoft.</p>
-                    </div>
+              <div class="confidential-container">
+                <img src="images/microsoft-pic.png">
+                <p class="top-right">Confidential</p>
+              </div>
+              <div class="tile-text">
+                  <p>Multiple envisioning projects for Microsoft exploring the intersection of new and existing technology and how we can shape our future.</p>
+                  </div>
             </div>
             <div class="tiles">
-                <img src="images/microsoft-pic.svg">
-                <div class="tile-text">
-                    <p>Multiple envisioning projects for Microsoft exploring the intersection of new and existing technology and how we can shape our future.</p>
-                    </div>
-            </div>
-            <div class="tiles">
-                <img src="images/twl-pic.svg">
-                <div class="tile-text">
-                    <p>A compilation of essays and interviews about the highs and lows of pet ownership that also doubles as a love letter to all the pets I've ever met.</p>
-                    </div>
-            </div>
-            <div class="tiles">
-                <img src="images/milo-pic.svg">
-                <div class="tile-text">
-                    <p>A brand identity for a DTC pet health startup focused on creating supplements bespoke to your pup and their individual needs.</p>
-                    </div>
-            </div>
-            <div class="tiles">
-                <img src="images/chord-pic.svg">
-                <div class="tile-text">
-                    <p>Developing a meaningful way for nomadic people to maintain their relationships and create new ones by sharing their own transient experiences.</p>
-                    </div>
-            </div>
-        </section>
-        <div class="grid-container">
-            <div class="grid-row">
-                <div class="grid-cell cell-heading">Title</div>
-                <div class="grid-cell wider-cell cell-heading">Description</div>
-                <div class="grid-cell cell-heading">Type</div>
-            </div>
-            <div class="grid-row">
-                <div class="grid-cell">Unsent Letters</div>
-                <div class="grid-cell wider-cell">A publication compiled of things people wish they had said.</div>
-                <div class="grid-cell">Publication Design</div>
-            </div>
-            <div class="grid-row">
-                <div class="grid-cell">Care Goals Guide</div>
-                <div class="grid-cell wider-cell">Supporting patients with cancer in goals of care discussions.</div>
-                <div class="grid-cell">Research, UX</div>
-            </div>
-            <div class="grid-row">
-                <div class="grid-cell">Periodical</div>
-                <div class="grid-cell wider-cell">Empowering news readers to engage with their local community.</div>
-                <div class="grid-cell">Brand, UX</div>
-            </div>
-            <div class="grid-row">
-                <div class="grid-cell">Pixel Music Fest</div>
-                <div class="grid-cell wider-cell">A mobile-design for a music festival celebrating indie game devs.</div>
-                <div class="grid-cell">Brand, Mobile</div>
-            </div>
-            <div class="grid-row">
-                <div class="grid-cell">Welcome to Andale</div>
-                <div class="grid-cell wider-cell">An fictional opening sequence based on Jonatham Lethem's Elevator Pitches.</div>
-                <div class="grid-cell">Motion Design</div>
-            </div>
+              <a href="caregoals.html"><img src="images/caregoals-pic.png"></a>
+              <div class="tile-text">
+                  <p>Creating a way for patients with cancer to feel supported in goals of care discussions with their clinician.</p>
+                  </div>
+          </div>
+          <div class="tiles">
+            <a href="mixedreality.html"><img src="images/mrdd-pic.png"></a>
+            <div class="tile-text">
+                <p>Developing signage and brand material for Mixed Reality Developer Program and Mixed Reality Dev Days, a public MR/VR hackathon hosted by Microsoft.</p>
+                </div>
+          </div>
+          <div class="tiles">
+            <a href="milo.html"><img src="images/milo-pic.png"></a>
+            <div class="tile-text">
+                  <p>A brand identity for a DTC pet health startup focused on creating supplements bespoke to your pup and their individual needs.</p>
+                  </div>
+          </div>
+          <div class="tiles">
+            <a href="acnh.html"><img src="images/acnh-pic.png"></a>
+            <div class="tile-text">
+                <p>Coding and designing a site that provides Animal Crossing New Horizons players with the ability to track their fish, bug, and sea creature progress.</p>
+                </div>
         </div>
+        </section>
+        <div>
+          <div class = "container">
+            <div class="accordion">
+                <div class="grid-item1">Unsent Letters</div>
+                <div class="grid-item2">A publication compiled of things people wish they had said.</div>
+                <div class="grid-item3">Publication Design</div>
+                <div class="carrot"><img src="images/carrot.svg"></div>
+            </div>
+          <div class="panel">
+              <!-- image goes here -->
+            </div>
+          <div class="accordion">
+            <div class="grid-item1">Periodical</div>
+            <div class="grid-item2">Empowering news readers to engage with their local community.</div>
+            <div class="grid-item3">Envisioning & Interface</div>
+            <div class="carrot"><img src="images/carrot.svg"></div>
+
+          </div>
+          <div class="panel">
+                          <!-- image goes here -->
+          </div>
+          <div class="accordion">
+            <div class="grid-item1">Chord</div>
+            <div class="grid-item2">Creating a meaningful way for those with transient lifestyles to stay connected.</div>
+            <div class="grid-item3">Envisioning & Product</div>
+            <div class="carrot"><img src="images/carrot.svg"></div>
+          </div>
+          <div class="panel">
+                          <!-- image goes here -->
+          </div>
+          <div class="accordion">
+            <div class="grid-item1">Miscellaneous</div>
+            <div class="grid-item2">Collection of smaller things I've worked on, here and there.</div>
+            <div class="grid-item3">Little Bit of Everything</div>
+            <div class="carrot"><img src="images/carrot.svg"></div>
+          </div>
+          <div class="panel scroll">
+                          <!-- image goes here -->
+          </div>
+      </div>
+      </div>
         <footer>
             <div class = "about-section">
-            <div>
-                <img src="images/my-dumb-face.png">
-            </div>
             <div id = "about-me">
                 <h2>
                     Nice to meet you! &#128075;
                 </h2>
                 <p>
                     I graduated from the University of Washington with a Bachelor of Design in visual communication and a minor in
-                     informatics. Right now I'm an experience designer at September Works. Some clients I've worked with include 
-                     Microsoft, Google, and Amazon. <br><br>Beyond the 9-5 (technically 8-4), I'm an avid fan of 
-                     video games, my own mediocre baking, and my two tripod dogs. I am only somewhat a fan of my cat and if you met 
-                     him you would understand. <br><br>Feel free to reach out for any reason! I'm always interested in new opportunities 
-                     and a nice, warm cup of tea.
+                     informatics. After graduation I contracted for a startup before becoming an experience designer at <a href="https://september.works" target="_blank">September Works</a> where I had the opportunity to collaborate with companies like
+                     Microsoft, Google, and Amazon.<br><br>Outside of design, I'm an avid fan of video games, fostering kittens for my local humane society, and my three loving pets. I've recently obtained my certificate in <a href="https://www.pce.uw.edu/certificates/front-end-development-with-html-css-and-javascript">front-end development</a>. Right now I'm looking for my next opportunity in UX or visual design.
+                     <br><br>This portfolio was both coded and designed from scratch by yours truly. It's currently being hosted on GitHub Pages. Click <a href="https://github.com/tsuishelley/portfolio" target="_blank">here</a> to see the repository.
                 </p>
             </div>
         </div>
@@ -128,20 +140,20 @@
         <div class="ticker-wrap">
             <div class="ticker">
               <span class="item-collection-1">
-                <span class="item">Do something nice today! &#127804;</span>
-                <span class="item">Do something nice today! &#127804;</span>
-                <span class="item">Do something nice today! &#127804;</span>
-                <span class="item">Do something nice today! &#127804;</span>
-                <span class="item">Do something nice today! &#127804;</span>
-                <span class="item">Do something nice today! &#127804;</span>
+                <span class="item">Don't forget to be kind!</span>
+                <span class="item">Don't forget to be kind!</span>
+                <span class="item">Don't forget to be kind!</span>
+                <span class="item">Don't forget to be kind!</span>
+                <span class="item">Don't forget to be kind!</span>
+                <span class="item">Don't forget to be kind!</span>
               </span>
               <span class="item-collection-2">
-                <span class="item">Do something nice today! &#127804;</span>
-                <span class="item">Do something nice today! &#127804;</span>
-                <span class="item">Do something nice today! &#127804;</span>
-                <span class="item">Do something nice today! &#127804;</span>
-                <span class="item">Do something nice today! &#127804;</span>
-                <span class="item">Do something nice today! &#127804;</span>
+                <span class="item">Don't forget to be kind!</span>
+                <span class="item">Don't forget to be kind!</span>
+                <span class="item">Don't forget to be kind!</span>
+                <span class="item">Don't forget to be kind!</span>
+                <span class="item">Don't forget to be kind!</span>
+                <span class="item">Don't forget to be kind!</span>
               </span>
             </div>
           <div>

@@ -1,50 +1,11 @@
 @import url("https://use.typekit.net/mee5nvp.css");
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Public+Sans:wght@300&display=swap');
 
+
 body {
     padding: 0rem 0rem 0rem 0rem;
     margin: 0rem 0rem 0rem 0rem;
     transition:.5s;
-}
-
-.dark-mode {
-    background-color: #131313;
-    color: #ffffff;
-    transition:.5s;
-  }
-
-.dark-mode a {
-        text-decoration: none;
-        color: #ffffff;
-}
-
-.dark-mode nav a {
-    background-color:#2c2c2c;
-}
-
-.dark-mode nav button {
-    background-color: transparent;
-    color:white;
-}
-
-.dark-mode footer{
-    background-color: #2c2c2c;
-}
-
-.dark-mode h1 {
-    color:white;
-}
-
-.dark-mode p {
-    color:#898989;
-}
-
-.dark-mode h2 {
-    color:white;
-}
-
-.dark-mode .tile-text {
-    color:#898989;
 }
 
 nav button {
@@ -54,7 +15,7 @@ nav button {
 
 h1 {
     font-family: source-serif-pro, serif;
-    color: #1D1D1D;
+    color: #131313;
     font-size: 3rem;
     font-style: normal;
     font-weight: 300;
@@ -63,22 +24,141 @@ h1 {
     padding: 0rem 6rem 0rem 6rem;
 }
 
+#project-title {
+    margin-top:5rem;
+    margin-bottom:5rem;
+}
+
+.project-details {
+    display:flex;
+    flex-direction:row;
+    margin: 0 6rem 2rem 6rem;
+    max-width: 950px;
+    justify-content: space-between;
+}
+
+.project-section {
+    display:flex;
+    flex-direction:row;
+    padding: 6rem 6rem 3rem 6rem;
+    justify-content: flex-end; /* Aligns items to the start (left) */
+    gap:5em;
+}
+
+.project-section-2 {
+    display:flex;
+    padding: 4rem 6rem 2rem 6rem;
+}
+
+.project-section-2 img {
+    width:100%;
+}
+
+.project-section-2 video {
+    width:100%;
+    height: 800px;
+    background-color:#03131B;
+    padding:60px 0;
+}
+
+.project-section p {
+    margin:0px;
+}
+
+.project-section img {
+    height:auto;
+    width:50%;
+}
+
 h2 {
     font-family: source-serif-pro, serif;
-    color: #1D1D1D;
+    color: #131313;
     font-size: 2rem;
     font-style: normal;
     font-weight: 300;
-    line-height: 120%;
+    line-height: 80%;
     max-width: 65%;
 }
+
+.accordion {
+    cursor: pointer;
+    background-color:white;
+    border-top:1px solid #898989;
+    width: 100%;
+    font-family: 'Public Sans', sans-serif;
+    color:#131313;
+    font-size: 1.05rem;
+    display:flex;
+    padding: 20px 0px 20px 0px;
+}
+
+.container {
+    margin: 0rem 6rem 0rem 6rem;
+    border-bottom: 1px solid #898989;
+}
+
+.grid-item1 {
+    flex: 2; 
+    text-align: left;
+}
+
+.project-copy {
+    display:flex;
+    flex-direction:column;
+}
+
+
+.grid-item2 {
+    flex: 5; 
+    text-align: left; 
+}
+
+.grid-item3 {
+    flex: 2; 
+    text-align: left; 
+}
+.carrot {
+    flex:1;
+    text-align: right;
+    align-self:center;
+}
+
+.carrot img {
+    transition: transform 0.4s; /* Smooth transition */
+}
+
+.accordion.active .carrot img {
+    transform: rotate(45deg); /* Rotate when active */
+}
+
+/* Existing CSS */
+.panel {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+}
+
+.panel img {
+    flex:5;
+    width:100%;
+}
+
+.accordion.active + .panel {
+    max-height: 500px; /* Adjust this to the maximum height of your content */
+    padding: 20px 0px 40px 0px; /* Maintain padding */
+}
+
+::selection {
+    color: white;
+    background: #377EF7;
+  }
 
 p {
     font-family: 'Public Sans', sans-serif;
     font-style: normal;
     line-height: 150%;
     font-size: 1.05rem;
-    color: #5B5B5B; 
+    color: #131313;
 }
 
 #intro {
@@ -93,6 +173,8 @@ p {
     font-weight: 300;
     line-height: 120%;
     max-width: 20em;
+    text-decoration:none;
+
 }
 
 .italic-blue:hover {
@@ -110,9 +192,31 @@ a:hover {
     position: relative;
 }
 
+.confidential-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-family: 'DM Mono', monospace;
+    font-style: normal;
+    font-weight:400;
+    font-size: .9rem;
+    color: white;
+    background-color: #13131330;
+    padding: .5em 1em .5em 1em;
+    border-radius: .5rem;
+  }
+
 #seattle {
     position: relative;
     display: inline-block;
+    cursor:pointer;
 }
 
 #seattle:hover::after {
@@ -122,11 +226,14 @@ a:hover {
     top: 100%; /* Position the image below the text */
     left: 50%; /* Center the image horizontally */
     transform: translateX(-50%); /* Adjust for centering */
+    z-index: 10; /* Ensure this value is higher than other elements */
+
 }
 
 #cats {
     position: relative;
     display: inline-block;
+    cursor:pointer;
 }
 
 #cats:hover::after {
@@ -136,6 +243,7 @@ a:hover {
     top: 100%; /* Position the image below the text */
     left: 50%; /* Center the image horizontally */
     transform: translateX(-50%); /* Adjust for centering */
+    z-index: 10; /* Ensure this value is higher than other elements */
 }
 
 nav a {
@@ -143,7 +251,7 @@ nav a {
     font-style: normal;
     font-weight:400;
     font-size: .9rem;
-    color: #1D1D1D;
+    color: #131313;
     text-decoration: none;
     background-color: #f3f3f3;
     padding: .5em 1em .5em 1em;
@@ -161,27 +269,23 @@ nav {
     padding-right: 6rem;
 }
 
-.tile-text {
-    font-family: 'Public Sans', sans-serif;
-    font-style: normal;
-    line-height: 150%;
-    font-size: 1.05rem;
-    color: #5B5B5B; 
-    padding-bottom: 2rem;
-}
-
 .tiles {
     max-width: 48%;
     padding: 3rem 0rem 0rem 0rem;
-}
+    padding-bottom: 2rem;
 
-.tiles img:hover {
-    transform:scale(.95);
 }
 
 .tiles img {
     max-width: 100%;
-    transition: transform .2s ease-in-out;
+    cursor:pointer;
+
+}
+
+.tiles img:hover{
+    max-width: 100%;
+    cursor:pointer;
+    opacity:85%;
 }
 
 .projects {
@@ -191,48 +295,16 @@ nav {
     justify-content: space-between;
 }
 
-.grid-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0rem 6rem 0rem 6rem;
-}
-
-.grid-row {
-    display: flex;
-    width: 100%;
-}
-
-.grid-cell {
-    font-family: 'Public Sans', sans-serif;
-    color:#5B5B5B;
-    font-size: 1.05rem;
-    flex: 1;
-    padding: 1rem;
-    border-bottom: solid .5px #898989;
-}
-
-
-.dark-mode .grid-cell {
-    color:#898989;
-    border-bottom: solid .5px #5B5B5B;
-}
-
-.cell-heading {
-    font-family: 'DM Mono', monospace;
-    font-style: normal;
-    font-weight:400;
-    font-size: .9rem;
-}
-
-.wider-cell {
-    flex:2;
-}
 
 footer {
     background-color: #F2F2F2;
     margin-top: 12rem;
 }
+
+.gray {
+    color:#9E9E9E;
+}
+
 
 .ticker-wrap {
     width: 100%;
@@ -243,7 +315,7 @@ footer {
     position: relative;
     bottom: 0;
     height: 3rem;
-    background-color: #377EF7
+    background-color: #377EF7;
   }
   .ticker {
     display: inline-block;
@@ -291,18 +363,37 @@ footer {
 
   .about-section {
     display:flex;
-    align-items: center;
-    padding: 6rem 3rem 6rem 3rem;
-    justify-content:center;
-    gap:4rem;
+    align-items: left;
+    padding: 6rem 6rem 6rem 6rem;
+    justify-content:start;
   }
 
+  .about-section a {
+    color: #377EF7;
+    text-decoration:none;
+
+  }
+
+  .scroll {
+        overflow: auto;
+        white-space: nowrap;
+  }
+  
+
   #about-me {
-    max-width:40%;
+    max-width:60%;
   }
   #about-me h2 {
     max-width:100%;
 }
+
+
+
+
+
+
+
+
 
   @media (max-width: 1000px) {
 
@@ -316,6 +407,8 @@ footer {
         font-weight: 300;
         line-height: 120%;
         max-width: 760px;
+        padding: 0rem 3rem 0rem 3rem;
+
     }
 
     #seattle {
@@ -325,7 +418,41 @@ footer {
     #cats {
         font-size: 2.5rem;
     }
+
+    .container {
+        margin: 5rem 3rem 0rem 3rem;
+
+    }
+
+    .about-section {
+        padding: 4rem 3rem;
+    }
+
+    #about-me {
+        max-width:100%;
+    }
+
+    .grid-item3 {
+        display:none;
+    }
+    .projects {
+        padding: 0rem 3rem 0rem 3rem;
+
+    }
+
+    .project-details {
+        margin: 0rem 3rem 0rem 3rem;
+
+    }
+
+    .project-section {
+        padding: 5rem 3rem 5rem 3rem;
+    }
+    .project-section-2 {
+        padding: 5rem 3rem 5rem 3rem;
+    }
   }
+
 
   @media (max-width: 760px) {
     h1 {
@@ -349,7 +476,7 @@ footer {
     .about-section {
         flex-direction: column;
         gap:0rem;
-        padding: 6rem 3rem 6rem 3rem;
+        padding: 4rem 3rem 4rem 3rem;
     }
     #about-me {
         max-width:100%;
@@ -367,9 +494,7 @@ footer {
     #cats {
         font-size: 2.2rem;
     }
-    .grid-container {
-        display:none;
-    }
+
     footer {
         margin-top:0rem;
     }
@@ -385,31 +510,62 @@ footer {
     .tiles {
         padding-bottom: 3rem;
     }
+    .project-section {
+        flex-direction:column;
+    }
+    .container {
+        margin:0 3rem;
+        margin-bottom:6rem;
+    }
+    .grid-item1 {
+        display:none;
+    }
+    .grid-item3 {
+        display:none;
+    }
+    .project-section img {
+        width:100%;
+    }
+
+    .project-details {
+        display:none;
+    }
+    #project-title{
+        margin-bottom:0;
+    }
+
   }
+
 
 
   @media (max-width: 500px) {
     h1 {
         font-size: 2.2rem;
-        padding: 0rem 2rem 4rem 2rem;
+        padding: 0rem 1rem;
+    }
+
+    #intro {
+        padding:1rem 1.5rem;
     }
     
     nav {
-        padding-right: 2rem;
+        padding:1rem 1.5rem;
+        
     }
     .projects {
-        padding: 2rem 2rem 2rem 2rem;
+        padding: 2rem 1.5rem;
     }
     .tiles {
         max-width:100%;
         padding-top: 0rem;
+        padding-bottom: 2rem;
     }
     .grid-container {
         padding: 4rem 2rem 0rem 2rem;
     }
     .about-section {
         gap:0rem;
-        padding: 4rem 2rem 4rem 2rem;
+        padding: 2rem 1.5rem;
     }
     #about-me {
         max-width:100%;
@@ -427,23 +583,42 @@ footer {
     #cats {
         font-size: 2.2rem;
     }
-    .grid-container {
-        display:none;
-    }
     footer {
         margin-top:0rem;
     }
-    nav {
-        height: 3rem;
-        padding-right: 0rem;
-        padding-left:2rem;
-    }
     .navigation div {
         float:left;
-        padding:2rem 1rem 2rem 0rem;
+        padding:2rem 1.5rem 2rem 0rem;
+        
     }
 
-    .tiles {
-        padding-bottom: 2rem;
+    .project-details{
+        margin:2rem 1.5rem;
+    }
+
+    .project-section {
+        padding:2rem 1.5rem;
+    }
+
+    .project-section-2{
+        padding:2rem 1.5rem;
+
+    }
+
+    .project-section img {
+        width:100%;
+    }
+
+    .container {
+        display:none;
+    }
+    p {
+        font-size:14px;
+    }
+    .top-right{
+        font-size:12px;
+    }
+    #project-title{
+        padding:0 1.5rem;
     }
   }
