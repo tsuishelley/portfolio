@@ -52,6 +52,8 @@ h1 {
 
 .project-section-2 img {
     width:100%;
+    object-fit: cover;
+
 }
 
 .project-section-2 video {
@@ -68,6 +70,8 @@ h1 {
 .project-section img {
     height:auto;
     width:50%;
+    object-fit: cover;
+
 }
 
 h2 {
