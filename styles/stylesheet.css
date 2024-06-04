@@ -84,7 +84,7 @@ h1 {
 h2 {
     font-family: Inter, sans serif;
     color: #3e3e3e75;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     margin-bottom:0.75rem;
@@ -511,7 +511,7 @@ footer {
 
     #intro {
         font-size: 2rem;
-        padding:1rem 0rem;;
+        padding:0rem;
     }
 
     .mobile {
@@ -523,7 +523,7 @@ footer {
     }
     
     nav {
-        padding:1rem 0rem;
+        padding:0.5rem 0rem;
         
     }
 
@@ -599,11 +599,11 @@ footer {
         font-size:12px;
     }
     #project-title{
-        margin:2rem 0rem 0 0rem;
+        margin:1rem 0rem 0 0rem;
         
     }
     h2 {
-        font-size: 1.2rem;
+        font-size: 14px;
 
     }
 
