@@ -290,9 +290,6 @@ nav {
     margin-bottom:3px;
 }
 
-.tile-text {
-    padding:7px 0;
-}
 
 .tiles img:hover{
     max-width: 100%;
@@ -379,6 +376,10 @@ footer {
   @media (max-width: 1000px) {
 
 
+    .mobile {
+        display:none;
+    }
+
     .main {
         padding: 0rem 3rem;
     }
@@ -420,6 +421,14 @@ footer {
     }
     h1 {
         font-size: 2.2rem;
+    }
+
+    .mobile {
+        display:block;
+    }
+
+    .desktop {
+        display:none;
     }
 
     .projects {
