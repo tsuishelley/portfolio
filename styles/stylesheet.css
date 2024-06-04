@@ -1,9 +1,12 @@
 @import url("https://use.typekit.net/mee5nvp.css");
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@100..900&display=swap');
 body {
-    padding: 0rem;
     margin: 0rem;
-    background-color: #FFFEFA;
+    background-color: white;
+}
+
+.main {
+    padding: 0rem 9rem 0rem 9rem;
 }
 
 nav button {
@@ -19,7 +22,6 @@ h1 {
     font-weight: 300;
     line-height: 120%;
     max-width: 950px;
-    padding: 0rem 9rem 0rem 9rem;
 }
 
 .gray {
@@ -34,7 +36,6 @@ h1 {
 .project-details {
     display:flex;
     flex-direction:row;
-    margin: 0 9rem;
     max-width: 950px;
     justify-content: space-between;
 }
@@ -42,14 +43,14 @@ h1 {
 .project-section {
     display:flex;
     flex-direction:row;
-    padding: 6rem 9rem 3rem 9rem;
+    padding: 3rem 0rem 3rem 0rem;
     justify-content: flex-end; /* Aligns items to the start (left) */
     gap:5em;
 }
 
 .project-section-2 {
     display:flex;
-    padding: 4rem 9rem 2rem 9rem;
+    padding: 3rem 0rem 3rem 0rem;
 }
 
 .project-section-2 img {
@@ -77,11 +78,11 @@ h1 {
 }
 
 h2 {
-    font-family: source-serif-pro, serif;
-    color: #3E3E3E;
-    font-size: 2rem;
+    font-family: Inter, sans serif;
+    color: #3e3e3e75;
+    font-size: 1.2rem;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom:0.75rem;
     max-width: 65%;
 }
@@ -97,7 +98,6 @@ h2 {
 }
 
 .container {
-    margin: 0rem 9rem;
     border-bottom: 1px solid #3e3e3e40;
 }
 
@@ -205,7 +205,7 @@ a:hover {
     font-family: 'DM Mono', monospace;
     font-style: normal;
     font-weight:400;
-    font-size: .8rem;
+    font-size: .9rem;
     color: white;
     background-color: #3E3E3E30;
     padding: .5em 1em .5em 1em;
@@ -252,7 +252,7 @@ nav a {
     font-size: .9rem;
     color: #3E3E3E;
     text-decoration: none;
-    background-color: #F4F2EC;
+    background-color: #F2F2F2;
     padding: .5em 1em .5em 1em;
     border-radius: .5rem;
 }
@@ -265,7 +265,6 @@ nav a:hover {
 
 nav {
     height: 3rem;
-    padding-right: 6rem;
 }
 
 .tiles {
@@ -278,12 +277,11 @@ nav {
 .tiles img {
     max-width: 100%;
     cursor:pointer;
-    border-radius:20px;
     margin-bottom:3px;
 }
 
 .tile-text {
-    padding:7px;
+    padding:7px 0;
 }
 
 .tiles img:hover{
@@ -293,7 +291,7 @@ nav {
 }
 
 .projects {
-    padding: 2rem 9rem 6rem 9rem;
+    padding: 2rem 0rem 6rem 0rem;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -371,13 +369,16 @@ footer {
   @media (max-width: 1000px) {
 
 
+    .main {
+        padding: 0rem 3rem;
+    }
+
     h1 {
         font-size: 2.5rem;
         font-style: normal;
         font-weight: 300;
         line-height: 120%;
         max-width: 760px;
-        padding: 0rem 3rem 0rem 3rem;
 
     }
 
@@ -389,51 +390,34 @@ footer {
         font-size: 2.5rem;
     }
 
-    .container {
-        margin: 5rem 3rem 0rem 3rem;
-
-    }
-
     .grid-item3 {
         display:none;
     }
-    .projects {
-        padding: 0rem 3rem 0rem 3rem;
-
-    }
-
-    .project-details {
-        margin: 0rem 3rem 0rem 3rem;
-
-    }
 
     .project-section {
-        padding: 5rem 3rem 5rem 3rem;
+        padding: 5rem 0;
     }
     .project-section-2 {
-        padding: 5rem 3rem 5rem 3rem;
+        padding: 5rem 0;
     }
   }
 
 
   @media (max-width: 760px) {
+
+    .main {
+        padding: 0rem 3rem 0rem 3rem;   
+    }
     h1 {
         font-size: 2.2rem;
-        padding: 0rem 3rem 0rem 3rem;
     }
-    
-    nav {
-        padding-right: 3rem;
-    }
+
     .projects {
-        padding: 3rem 3rem 3rem 3rem;
+        padding: 3rem 0rem;
     }
     .tiles {
         max-width:100%;
         padding-top: 0rem;
-    }
-    .grid-container {
-        padding: 6rem 3rem 0rem 3rem;
     }
 
     #seattle {
@@ -448,9 +432,8 @@ footer {
     }
     nav {
         height: 3rem;
-        padding-right: 0rem;
-        padding-left:3rem;
     }
+
     .navigation div {
         float:left;
         padding:2rem 1rem 2rem 0rem;
@@ -462,7 +445,6 @@ footer {
         flex-direction:column;
     }
     .container {
-        margin:0 3rem;
         margin-bottom:6rem;
     }
     .grid-item1 {
@@ -486,31 +468,47 @@ footer {
 
 
   @media (max-width: 500px) {
+    .main {
+        padding: 0rem 1rem; 
+    }
     h1 {
         font-size:2rem;
-        padding: 0rem 1rem;
     }
 
     #intro {
         font-size: 2rem;
-
-        padding:1rem 1.5rem;
+        padding:1rem 0rem;;
     }
     
     nav {
-        padding:1rem 1.5rem;
+        padding:1rem 0rem;
         
     }
-    .projects {
-        padding: 2rem 1.5rem;
+
+    .container {
+        padding:0rem;
     }
+
+    .grid-item2{
+        display:none;
+    }
+
+    .grid-item3{
+        display:none;
+    }
+
+    .grid-item1{
+        display:block;
+    }
+
+    .projects {
+        padding: 2rem 0rem;
+    }
+
     .tiles {
         max-width:100%;
         padding-top: 0rem;
         padding-bottom: 2rem;
-    }
-    .grid-container {
-        padding: 4rem 2rem 0rem 2rem;
     }
 
     #seattle {
@@ -524,20 +522,21 @@ footer {
     }
     .navigation div {
         float:left;
-        padding:2rem 1.5rem 2rem 0rem;
+        padding:2rem 1rem 2rem 0rem;
         
     }
 
     .project-details{
-        margin:2rem 1.5rem;
+        margin:2rem 0rem;
     }
 
     .project-section {
-        padding:2rem 1.5rem;
+        padding:2rem 0rem;
+        gap:2rem;
     }
 
     .project-section-2{
-        padding:2rem 1.5rem;
+        padding:2rem 0rem;
 
     }
 
@@ -546,9 +545,7 @@ footer {
         object-fit: cover;
     }
 
-    .container {
-        display:none;
-    }
+
     p {
         font-size:14px;
     }
@@ -556,11 +553,11 @@ footer {
         font-size:12px;
     }
     #project-title{
-        padding:0 1.5rem;
+        margin:2rem 0rem 0 0rem;
         
     }
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
 
     }
     .tile-text {
