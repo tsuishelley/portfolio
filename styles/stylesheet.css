@@ -364,6 +364,13 @@ footer {
   .scroll {
         overflow: auto;
         white-space: nowrap;
+        flex:3;
+        object-fit: cover;
+        height:100%;
+  }
+
+  .scroll img {
+    max-width:40%;
   }
   
 
