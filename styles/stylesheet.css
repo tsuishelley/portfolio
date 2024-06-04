@@ -140,16 +140,22 @@ h2 {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+    display: flex; /* Add this line */
+    flex-direction: row; /* This can be adjusted based on your layout needs */
+    justify-content: space-between;
+    gap:5rem;
 }
 
 .panel img {
     flex:5;
-    width:100%;
+    max-width:48%;
+    object-fit: cover;
+    height:100%;
 }
 
 .accordion.active + .panel {
     max-height: 500px; /* Adjust this to the maximum height of your content */
-    padding: 20px 0px 40px 0px; /* Maintain padding */
+    padding: 30px 0px 60px 0px; /* Maintain padding */
 }
 
 
@@ -440,6 +446,15 @@ footer {
     }
     .tiles {
         padding-bottom: 3rem;
+    }
+    
+    .panel {
+        flex-direction:column;
+        gap:2rem;
+    }
+
+    .panel img {
+        max-width:100%;
     }
     .project-section {
         flex-direction:column;
