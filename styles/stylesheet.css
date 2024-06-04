@@ -511,7 +511,7 @@ footer {
 
     #intro {
         font-size: 2rem;
-        padding:0rem;
+        padding:0 0 2rem 0;
     }
 
     .mobile {
@@ -599,7 +599,7 @@ footer {
         font-size:12px;
     }
     #project-title{
-        margin:1rem 0rem 0 0rem;
+        margin:1rem 0rem 2rem 0rem;
         
     }
     h2 {
