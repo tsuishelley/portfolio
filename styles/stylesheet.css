@@ -24,6 +24,10 @@ h1 {
     max-width: 950px;
 }
 
+.mobile{
+    display:none;
+}
+
 .gray {
     color:#3E3E3E75;
     line-height:100%;
@@ -499,6 +503,14 @@ footer {
     #intro {
         font-size: 2rem;
         padding:1rem 0rem;;
+    }
+
+    .mobile {
+        display:block;
+    }
+
+    .desktop {
+        display:none;
     }
     
     nav {
