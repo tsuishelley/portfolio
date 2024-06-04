@@ -258,7 +258,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #3E3E3E;
+    background-color: #377EF7;
     color:white;
     transition-duration: .5s;
 }
@@ -522,7 +522,7 @@ footer {
     }
     .navigation div {
         float:left;
-        padding:2rem 1rem 2rem 0rem;
+        padding:1rem 1rem 0rem 0rem;
         
     }
 
