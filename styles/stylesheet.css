@@ -450,7 +450,6 @@ footer {
     
     .panel {
         flex-direction:column;
-        gap:2rem;
     }
 
     .panel img {
