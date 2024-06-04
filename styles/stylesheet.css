@@ -3,10 +3,12 @@
 body {
     margin: 0rem;
     background-color: white;
+    cursor: url('/images/cursor.png'), auto;
 }
 
 .main {
     padding: 0rem 9rem 0rem 9rem;
+    
 }
 
 nav button {
