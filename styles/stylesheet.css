@@ -7,7 +7,7 @@ body {
 }
 
 .main {
-    padding: 0rem 9rem 0rem 9rem;
+    padding: 0rem 9rem;
     
 }
 
@@ -309,7 +309,12 @@ nav {
 
 footer {
     margin-top:10rem;
+    padding: 4rem 9rem;
+    background-color:#F7F7F7;
+}
 
+footer p {
+    max-width:48%;
 }
 
 .ticker-wrap {
@@ -420,6 +425,20 @@ footer {
     .project-section-2 {
         padding: 5rem 0;
     }
+      .scroll img {
+    max-width:40%;
+  }
+
+  footer {
+    padding: 3rem 3rem;
+    max-width:100%;
+
+
+  }
+    footer p {
+    max-width:100% !important;
+}
+
   }
 
 
@@ -615,5 +634,15 @@ footer {
         font-size: 14px;
 
     }
+
+  footer {
+    padding: 2rem 1rem;
+    max-width:100%;
+
+
+  }
+    footer p {
+    max-width:100% !important;
+}
 
   }
