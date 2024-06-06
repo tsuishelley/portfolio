@@ -289,7 +289,7 @@ nav a {
     letter-spacing: 1px;
     color: #3E3E3E;
     text-decoration: none;
-    background-color: #F2F2F2;
+    background-color: #F4F3EE;
     padding: .5em 1em .5em 1em;
     border-radius: .5rem;
 }
@@ -338,7 +338,7 @@ nav {
 footer {
     margin-top:10rem;
     padding: 4rem 9rem;
-    background-color:#F7F7F7;
+    background-color:#F4F3EE;
 }
 
 footer p {
