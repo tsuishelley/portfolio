@@ -4,9 +4,6 @@ body {
     margin: 0rem;
     background-color: white;
     cursor: url('/images/cursor.svg'), auto;
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 .main {
