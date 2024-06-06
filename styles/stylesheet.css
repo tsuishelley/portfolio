@@ -34,7 +34,6 @@ h1 {
 .gray {
     color:#3E3E3E !important;
     line-height:100%;
-    font-size:1.2rem;
 }
 
 #project-title {
@@ -89,7 +88,7 @@ h1 {
 h2 {
     font-family: Inter, sans serif;
     color:#3E3E3E;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     margin-bottom:0.75rem;
