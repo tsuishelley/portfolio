@@ -37,6 +37,7 @@ h1 {
 .gray {
     color:#3E3E3E !important;
     line-height:100%;
+    font-size:1.2rem;
 }
 
 #project-title {
@@ -77,6 +78,7 @@ h1 {
 }
 
 .project-section p {
+    color:#3E3E3E90;
     margin:0px;
 }
 
@@ -89,8 +91,8 @@ h1 {
 
 h2 {
     font-family: Inter, sans serif;
-    color:#3E3E3E85;
-    font-size: 1rem;
+    color:#3E3E3E;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
     margin-bottom:0.75rem;
@@ -155,6 +157,10 @@ h2 {
     justify-content: space-between;
     gap:5rem;
     width: 100%;
+}
+
+.panel p {
+    color:#3E3E3E90;
 
 }
 
@@ -189,7 +195,7 @@ p a {
 }
 
 p a:hover {
-    color:#3E3E3E;
+    color:#3E3E3E90;
 }
 
 #intro {
@@ -305,7 +311,7 @@ nav {
 }
 
 .tile-text p {
-    color:#3E3E3E85;
+    color:#3E3E3E90;
 }
 
 .tiles img {
