@@ -239,10 +239,11 @@ a:hover {
     position: absolute;
     top: 10px;
     right: 20px;
-    font-family: 'DM Mono', monospace;
     font-style: normal;
     font-weight:400;
-    font-size: .8rem;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: white;
     background-color: #3E3E3E30;
     padding: .5em 1em .5em 1em;
@@ -283,10 +284,12 @@ a:hover {
 }
 
 nav a {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight:400;
-    font-size: .8rem;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: #3E3E3E;
     text-decoration: none;
     background-color: #F2F2F2;
@@ -370,10 +373,12 @@ footer p {
   .item {
     display: inline-block;
     padding: 0 1rem;
-    font-size: .8rem;
-    color: #FFFEF9;
+    color: white;
     font-weight: 400;
-    font-family: 'DM Sans', monospace;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family:'Inter', sans serif;
   }
   
   /* Transition */
