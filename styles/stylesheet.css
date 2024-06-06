@@ -23,11 +23,11 @@ nav button {
 h1 {
     font-family: source-serif-pro, serif;
     color: #3E3E3E;
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-style: normal;
     font-weight: 300;
     line-height: 120%;
-    max-width: 950px;
+    max-width: 1000px;
 }
 
 .mobile{
@@ -199,7 +199,7 @@ p a:hover {
 .italic-blue {
     font-family: source-serif-pro, serif;
     color: #377EF7;
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-style: italic;
     font-weight: 300;
     line-height: 120%;
