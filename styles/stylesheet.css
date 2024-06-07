@@ -3,7 +3,6 @@
 body {
     margin: 0rem;
     background-color: white;
-    cursor: url('/images/cursor.svg'), auto;
 }
 
 .main {
