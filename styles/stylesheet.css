@@ -515,7 +515,6 @@ footer p {
     }
 
     .navigation div {
-        float:left;
         padding:2rem 2rem 2rem 0rem;
     }
     .tiles {
@@ -572,7 +571,7 @@ footer p {
 
     #intro {
         font-size: 2rem;
-        padding:0 0 2rem 0;
+        padding:1rem 0 2rem 0;
     }
 
     .mobile {
@@ -625,7 +624,6 @@ footer p {
         margin-top:0rem;
     }
     .navigation div {
-        float:left;
         padding:1rem 1rem 0rem 0rem;
     }
 
