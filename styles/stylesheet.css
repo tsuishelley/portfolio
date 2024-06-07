@@ -214,7 +214,7 @@ p a:hover {
 }
 
 .navigation div {
-    padding: 2rem 0rem 2rem 2rem;
+    padding: 2rem 0rem 2rem 3rem;
     display:inline;
     float:right;
     align-items:center;
@@ -286,7 +286,6 @@ nav a {
     font-size:.95rem;
     color: #3E3E3E;
     text-decoration: none;
-    padding: 0 .5em;
 }
 
 nav a:hover {
@@ -517,7 +516,7 @@ footer p {
 
     .navigation div {
         float:left;
-        padding:2rem 1rem 2rem 0rem;
+        padding:2rem 2rem 2rem 0rem;
     }
     .tiles {
         padding-bottom: 3rem;
@@ -628,7 +627,11 @@ footer p {
     .navigation div {
         float:left;
         padding:1rem 1rem 0rem 0rem;
-        
+    }
+
+    nav a {
+        font-size:14px;
+
     }
 
     .project-details{
