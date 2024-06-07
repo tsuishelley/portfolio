@@ -283,6 +283,7 @@ nav a {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight:400;
+    font-size:.95rem;
     color: #3E3E3E;
     text-decoration: none;
     padding: 0 .5em;
@@ -587,6 +588,7 @@ footer p {
         padding:0.5rem 0rem;
         
     }
+
 
     .container {
         padding:0rem;
