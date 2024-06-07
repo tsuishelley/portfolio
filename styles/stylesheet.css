@@ -34,12 +34,16 @@ body.dark-mode p {
     color:rgba(255, 255, 255, 0.50);
 }
 
+body.dark-mode a:hover {
+    color:white;
+}
+
 body.dark-mode p.gray {
     color:white !important;
 }
 
 body.dark-mode .accordion {
-    color:rgba(255, 255, 255, 0.50);
+    color:white;
     border-color:rgba(255, 255, 255, 0.20);
 }
 
