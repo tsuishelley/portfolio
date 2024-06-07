@@ -55,6 +55,10 @@ body.dark-mode footer {
     background-color:#404040;
 }
 
+body.dark-mode .top-right {
+    color:white !important;
+}
+
 .hover-underline-animation {
     display: inline-block; /* Display inline block */
     position: relative; /* Set position relative */
