@@ -1,5 +1,94 @@
 @import url("https://use.typekit.net/mee5nvp.css");
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@100..900&display=swap');
+/* Add this to your stylesheet.css */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light mode (default) */
+body {
+    background-color: white;
+}
+
+button#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark-mode h1 {
+    color: white;
+}
+
+body.dark-mode nav a {
+    color:white;
+}
+
+body.dark-mode p {
+    color:rgba(255, 255, 255, 0.50);
+}
+
+body.dark-mode p.gray {
+    color:white !important;
+}
+
+body.dark-mode .accordion {
+    color:rgba(255, 255, 255, 0.50);
+    border-color:rgba(255, 255, 255, 0.20);
+}
+
+body.dark-mode .container {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+body.dark-mode h2 {
+    color:white !important;
+}
+
+body.dark-mode footer {
+    background-color:#404040;
+}
+
+.hover-underline-animation {
+    display: inline-block; /* Display inline block */
+    position: relative; /* Set position relative */
+    color:#3e3e3e;
+  }
+  
+  .hover-underline-animation:after {
+    content: ''; /* Add content after the element */
+    position: absolute; /* Position absolute for pseudo-element */
+    width: 100%; /* Full width */
+    transform: scaleX(0); /* Initial scale of 0 for underline effect */
+    height: 1px; /* Height of the underline */
+    bottom: 0; /* Align to bottom */
+    left: 0; /* Align to left */
+    color:#3E3E3E;
+    background-color: #3e3e3e; /* Background color of the underline */
+    transform-origin: bottom right; /* Set transform origin */
+    transition: transform 0.25s ease-out; /* Transition effect for the underline */
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1); /* Scale the underline on hover */
+    transform-origin: bottom left; /* Set transform origin */
+  }
+
+  /* Dark mode underline color change */
+body.dark-mode .hover-underline-animation {
+    color: white;
+}
+
+body.dark-mode .hover-underline-animation:after {
+    background-color: white; /* Change the underline color to white in dark mode */
+}
+
 body {
     margin: 0rem;
     background-color: white;
@@ -284,13 +373,10 @@ nav a {
     font-weight:400;
     font-size:.95rem;
     color: #3E3E3E;
+    padding-bottom:8px;
     text-decoration: none;
 }
 
-nav a:hover {
-    color:#377EF7;
-    transition-duration: .5s;
-}
 
 nav {
     height: 3rem;
@@ -330,7 +416,7 @@ nav {
 footer {
     margin-top:10rem;
     padding: 4rem 9rem;
-    background-color:#F4F3EE;
+    background-color:#EFEFEF;
 }
 
 footer p {
