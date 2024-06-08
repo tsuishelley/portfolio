@@ -55,10 +55,6 @@ body.dark-mode h2 {
     color:white !important;
 }
 
-body.dark-mode footer {
-    background-color:#404040;
-}
-
 body.dark-mode .top-right {
     color:white !important;
 }
@@ -451,7 +447,6 @@ nav {
 footer {
     margin-top:10rem;
     padding: 4rem 9rem;
-    background-color:#EFEFEF;
 }
 
 footer p {
