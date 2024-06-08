@@ -38,6 +38,10 @@ body.dark-mode a:hover {
     color:white;
 }
 
+body.dark-mode .italic-blue:hover {
+    color:#377EF7;
+}
+
 body.dark-mode p.gray {
     color:white !important;
 }
