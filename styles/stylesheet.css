@@ -110,6 +110,7 @@ body {
 #about {
     max-width:800px;
     color: #3E3E3E90;
+    padding-bottom:4rem;
 
 }
 
@@ -119,7 +120,8 @@ body.dark-mode #about {
 }
 
 .about-details {
-    padding-top:6rem;
+    border-top:1px solid #3e3e3e40;
+    padding-top:1rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap:5rem;
@@ -547,7 +549,7 @@ footer p {
     }
 
     .about-details {
-        padding-top:4rem;
+        padding-top:1rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap:2rem;
@@ -615,7 +617,7 @@ footer p {
     }
 
     .about-details {
-        padding-top:4rem;
+        padding-top:1rem;
         padding-bottom:4rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -704,7 +706,7 @@ footer p {
   @media (max-width: 500px) {
 
     .about-details {
-        padding-top:4rem;
+        padding-top:1rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap:1rem;
