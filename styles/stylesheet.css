@@ -251,7 +251,7 @@ p a {
 }
 
 #intro {
-    padding:4rem 0 4rem 0;
+    padding:2rem 0 4rem 0;
     margin:0;
 }
 
@@ -403,7 +403,7 @@ footer div {
 @media (max-width: 760px) {
 
     #intro {
-        padding:3rem 0 3rem 0;
+        padding:1.5rem 0 3rem 0;
     }
 
     .project-container {
@@ -438,7 +438,7 @@ footer div {
 @media (max-width: 500px) {
 
     #intro {
-        padding:2rem 0 2rem 0;
+        padding:1.5rem 0 2rem 0;
     }
 
     .grid-item1 {
