@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Shelley Tsui</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://raw.githubusercontent.com/tsuishelley/portfolio/main/images/og-image.png"/>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L95KC35WE5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L95KC35WE5');
+</script>
+<body>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var acc = document.getElementsByClassName("accordion");
+
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function(event) {
+            var target = event.target;
+            if (target.tagName !== "A" && !target.closest("a")) {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            }
+        });
+    }
+
+    // Function to set the theme
+    function setTheme(theme) {
+        const carrotImgs = document.querySelectorAll('.carrot img');
+        if (theme === 'dark') {
+            document.body.classList.add('dark-mode');
+            toggleButton.innerHTML = '<img src="assets/light-mode.svg">';
+            carrotImgs.forEach(img => img.src = 'images/carrot-dark.svg');
+        } else {
+            document.body.classList.remove('dark-mode');
+            toggleButton.innerHTML = '<img src="assets/dark-mode.svg">';
+            carrotImgs.forEach(img => img.src = 'images/carrot.svg');
+        }
+    }
+
+    // Dark mode toggle functionality
+    const toggleButton = document.getElementById('theme-toggle');
+    toggleButton.addEventListener('click', function() {
+        let theme = document.body.classList.contains('dark-mode') ? 'light' : 'dark';
+        setTheme(theme);
+        localStorage.setItem('theme', theme);
+    });
+
+    // Apply the theme on initial load
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+});
+
+</script>
+<div class="main">
+<body class="project">
+    <div class="locked">
+        <p>This project is confidential. Please contact me for more details.</p>
+    </div>

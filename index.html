@@ -7,48 +7,48 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="https://raw.githubusercontent.com/tsuishelley/portfolio/main/images/og-image.png"/>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L95KC35WE5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L95KC35WE5');
+    </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L95KC35WE5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-L95KC35WE5');
-</script>
 <body>
 <script>
-  
 document.addEventListener('DOMContentLoaded', function () {
     var acc = document.getElementsByClassName("accordion");
+
     for (var i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
+        acc[i].addEventListener("click", function(event) {
+            var target = event.target;
+            if (target.tagName !== "A" && !target.closest("a")) {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
             }
         });
     }
 
-    // Function to set the theme
     function setTheme(theme) {
-        const carrotImgs = document.querySelectorAll('.carrot img');
+        const arrowImgs = document.querySelectorAll('.arrow img');
         if (theme === 'dark') {
             document.body.classList.add('dark-mode');
             toggleButton.innerHTML = '<img src="assets/light-mode.svg">';
-            carrotImgs.forEach(img => img.src = 'images/carrot-dark.svg');
+            arrowImgs.forEach(img => img.src = 'images/arrow-dark.svg');
         } else {
             document.body.classList.remove('dark-mode');
             toggleButton.innerHTML = '<img src="assets/dark-mode.svg">';
-            carrotImgs.forEach(img => img.src = 'images/carrot.svg');
+            arrowImgs.forEach(img => img.src = 'images/arrow.svg');
         }
     }
 
-    // Dark mode toggle functionality
     const toggleButton = document.getElementById('theme-toggle');
     toggleButton.addEventListener('click', function() {
         let theme = document.body.classList.contains('dark-mode') ? 'light' : 'dark';
@@ -56,146 +56,116 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('theme', theme);
     });
 
-    // Apply the theme on initial load
     const savedTheme = localStorage.getItem('theme') || 'light';
     setTheme(savedTheme);
 });
 </script>
+
 <div class="main">
   <header>
     <nav>
         <section class="navigation">
-            <div>
-                <a href="assets/tsui-shelley-resume.pdf" class = "hover-underline-animation" target="_blank">Resume</a>
+            <div class="left-nav">
             </div>
-            <div>
-                <a href="about.html" class = "hover-underline-animation">About</a>
-            </div>
-            <div>
-                <a href="/" class = "hover-underline-animation">Works</a>
-            </div>
-            <div>
-                <button id="theme-toggle" class = "hover-underline-animation"><img src="assets/light-mode.svg"></button>
+            <div class="right-nav">
+                <div>
+                    <a href="assets/tsui-shelley-resume.pdf" class="hover-underline-animation" target="_blank">Resume</a>
+                </div>
+                <div>
+                    <a href="https://linkedin.com/in/shelley-tsui" class="hover-underline-animation" target="_blank">LinkedIn</a>
+                </div>
+                <div>
+                    <button id="theme-toggle" class="hover-underline-animation"><img src="assets/light-mode.svg"></button>
+                </div>
             </div>
         </section>
     </nav>
 </header>
-        <h1 id="intro" class="desktop">Hi there, I'm a user experience & visual designer based in <a href="https://www.seattlesouthside.com/" target="_blank" class="italic-blue" id="seattle">rainy Seattle</a>. I'm versed in front-end development, design, and <a href="https://www.youtube.com/watch?v=z3U0udLH974" target="_blank" class="italic-blue" id="cats">cats</a>.</h1>
-        <h1 id="intro" class="mobile">Nice to meet you, I'm a user experience & visual designer based in <a href="https://www.seattlesouthside.com/" target="_blank" class="italic-blue" id="seattle">rainy Seattle</a>.</h1>
-        <section class="projects">
-            <div class="tiles">
-                <a href="antologi.html"><img src="images/antologi-pic.png" loading="lazy"></a>
-                <div class="tile-text">
-                    <p class="gray">Antologi</p>
-                    <p>A startup in Google's Area 120 incubator focused on promoting better async work for people by using ML to synthesize meeting recordings.</p>
-                    </div>
-            </div>
-            <div class="tiles">
-              <div class="confidential-container">
-                <img src="images/microsoft-pic.png" loading="lazy">
-                <p class="top-right">Confidential</p>
-              </div>
-              <div class="tile-text">
-                <p class="gray">Microsoft Envisioning Projects</p>
-                  <p>Multiple envisioning projects for Microsoft exploring the intersection of new and existing technology and how we can shape our future.</p>
-                  </div>
-            </div>
-            <div class="tiles">
-              <a href="caregoals.html"><img src="images/caregoals-pic.png" loading="lazy"></a>
-              <div class="tile-text">
-                <p class="gray">Care Goals Guide</p>
-                  <p>Creating a way for patients with cancer to feel supported in goals of care discussions with their clinician.</p>
-                  </div>
-          </div>
-          <div class="tiles">
-            <a href="mixedreality.html"><img src="images/mrdd-pic.png" loading="lazy"></a>
-            <div class="tile-text">
-              <p class="gray">Mixed Reality Developer Program</p>
-                <p>Developing signage and brand material for Mixed Reality Developer Program and Mixed Reality Dev Days, a Microsoft hackathon.</p>
-                </div>
-          </div>
-          <div class="tiles">
-            <a href="milo.html"><img src="images/milo-pic.png" loading="lazy"></a>
-            <div class="tile-text">
-              <p class="gray">Milo Treats</p>
-                  <p>A brand identity for a DTC pet health startup that develops supplements bespoke to your pup and their individual needs.</p>
-                  </div>
-          </div>
-          <div class="tiles">
-            <a href="acnh.html"><img src="images/acnh-pic.png" loading="lazy"></a>
-            <div class="tile-text">
-              <p class="gray">Animal Crossing Checklist</p>
-                <p>Coding a site that provides Animal Crossing New Horizons players with the ability to track their fish, bug, and sea creature progress.</p>
-                </div>
-        </div>
-        </section>
-        <div>
-          <div class = "container">
-            <div class="accordion">
-                <div class="grid-item1">Unsent Letters</div>
-                <div class="grid-item2">A publication compiled of things people wish they had said.</div>
-                <div class="grid-item3">Publication Design</div>
-                <div class="carrot"><img src="images/carrot.svg"></div>
-            </div>
-          <div class="panel">
-            <p>Using an anonymous Google survey, I collected responses from people all over the world about things they wish they had said or never had the chance to. The publication features AI-generated handwriting to encapsulate the sense of authenticity yet anonymity.</p>
-            <img src="images/unsent-pic.png">
-          </div>
-          <div class="accordion">
-            <div class="grid-item1">Periodical</div>
-            <div class="grid-item2">Empowering news readers to engage with their local community.</div>
-            <div class="grid-item3">Envisioning & Interface</div>
-            <div class="carrot"><img src="images/carrot.svg"></div>
-          </div>
-          <div class="panel">
-              <p class=>Periodical is an interactive news platform that empowers news consumers in their local communities.
-                This digital platform gives readers a way to make a difference with a robust program for community engagement.<br><br>Designed with Stephanie Waldrop, Melissa Takai, and Evita Wijaya.</p>
-              <img src="images/periodical-pic.png">
-          </div>
-          <div class="accordion">
-            <div class="grid-item1">Chord</div>
-            <div class="grid-item2">Creating a meaningful way for those with transient lifestyles to stay connected.</div>
-            <div class="grid-item3">Envisioning & Product</div>
-            <div class="carrot"><img src="images/carrot.svg"></div>
-          </div>
-          <div class="panel">
-            <p>Not only does Chord provide a way to revisit sounds but it allows you to share them with others. Each recording that exists within a Chord card can be given to someone else and remind them of a new sight, a new sound, and a new person.<br><br>Designed with Lily Liu, Sasha Noerdin, and Emily Wang.</p>
-            <img src="images/chord-pic.png">
-          </div>
-          <div class="accordion">
-            <div class="grid-item1">Figma Stalker</div>
-            <div class="grid-item2">Recreating the experience of being followed in Figma.</div>
-            <div class="grid-item3">Front-End Development & Design</div>
-            <div class="carrot"><img src="images/carrot.svg"></div>
-          </div>
-          <div class="panel">
-                <p>This was a fun project I did inspired by my love of popping into Figma files and saying hi to people using cursor chat. Users are able to click and drag my favorite memes on the canvas and each refresh provides a new message from your friendly Figma stalker. Click <a href="https://figmastalker.netlify.app/" target="_blank">here</a> to be followed!</p>
-                <img src="images/figma-stalker.png">
-        </div>
+  <h1 id="intro" class="desktop">Shelley Tsui is a product designer based in <a href="https://www.seattlesouthside.com/" target="_blank" class="italic-blue" id="seattle">rainy Seattle</a>. She's versed in front-end development, design, and most importantly <a href="https://www.youtube.com/watch?v=z3U0udLH974" target="_blank" class="italic-blue" id="cats">cats</a>. Currently freelancing for start-ups.</h1>
+  <h1 id="intro" class="mobile">Shelley Tsui is a product designer based in <a href="https://www.seattlesouthside.com/" target="_blank" class="italic-blue" id="seattle">rainy Seattle</a>. Currently freelancing for start-ups.</h1>
+  <div class="project-grid">
+    <a href="antologi.html">
+    <div class="project-item1">
+      <p class="project-text">Antologi<br><span class="low-op">Product Design</span></p>
+      <img src="antologi-images/antolog-logo.png">
+    </div>
+  </a>
+  <a href="envisioning.html">
+    <div class="project-item2">
+      <p class="project-text">Envisioning Projects<br><span class="low-op">North Star Ideation</span></p>
+      <img src="images/envisioning.png">
+    </div>
+    </a>
+    <a href="milo.html">
+    <div class="project-item3">
+      <p class="project-text">Milo Treats<br><span class="low-op">Visual Identity</span></p>
+      <img src="images/milo-treats.png">
+
+    </div>
+    </a>
+    <a href="mixedreality.html">
+    <div class="project-item4">
+      <p class="project-text">Mixed Reality Dev Days<br><span class="low-op">Visual Identity</span></p>
+      <img src="images/mrdd.png">
+    </div>
+    </a>
+  </div>
+  <div>
+    <div class="container">
+      <div class="accordion">
+        <a href="caregoals.html">
+          <div class="grid-item1">Care Goals Guide</div>
+          <div class="grid-item2">Supporting patients with cancer in goals of care discussions with their clinician.</div>
+          <div class="grid-item3">UX Research</div>
+          <div class="arrow"><img src="images/arrow.svg"></div>
+        </a>
       </div>
+      <div class="accordion">
+        <a href="https://animalcrossingchecklist.netlify.app/" target="blank">
+          <div class="grid-item1">Animal Crossing List</div>
+          <div class="grid-item2">Providing Animal Crossing players with means to track their progress.</div>
+          <div class="grid-item3">Front-End Development & Design</div>
+          <div class="arrow"><img src="images/arrow.svg"></div>
+        </a>
+      </div>
+      <div class="accordion">
+        <a href="https://figmastalker.netlify.app/" target="blank">
+          <div class="grid-item1">Figma Stalker</div>
+          <div class="grid-item2">Recreating the experience of being followed in Figma.</div>
+          <div class="grid-item3">Front-End Development & Design</div>
+          <div class="arrow"><img src="images/arrow.svg"></div>
+        </a>
       </div>
     </div>
-      <footer>
-      </footer>
-      <div class="ticker-wrap">
-        <div class="ticker">
-          <span class="item-collection-1">
-            <span class="item">Coded & designed with love</span>
-            <span class="item">Coded & designed with love</span>
-            <span class="item">Coded & designed with love</span>
-            <span class="item">Coded & designed with love</span>
-            <span class="item">Coded & designed with love</span>
-            <span class="item">Coded & designed with love</span>
-          </span>
-          <span class="item-collection-2">
-            <span class="item">Coded & designed with love</span>
-            <span class="item">Coded & designed with love</span>
-            <span class="item">Coded & designed with love</span>
-            <span class="item">Coded & designed with love</span>
-            <span class="item">Coded & designed with love</span>
-            <span class="item">Coded & designed with love</span>
-          </span>
-        </div>
-      <div>
-    </body>
- </html>
+  </div>
+</div>
+<footer>
+  <div class="about-details">
+    <p>
+      I graduated from the University of Washington with a Bachelor of Design in visual communication and a minor in informatics. I’ve learned to acknowledge and embrace the design process as fluid, never fixed. My favorite feeling is using design to legitimize ideas and make things come to life. Some of my past collaborators include Microsoft, Google, Amazon, Curious VC, and Pioneer Square Labs.
+      <br><br>
+      Most recently I’ve obtained my certificate in front-end development as a complement to my design skills. Right now I’m freelancing, working on my own passion projects, and looking for my next opportunity in visual and/or UX design.
+      <br><br>
+      This site was coded from scratch with basic HTML, CSS, and a little bit of JavaScript. Typefaces used are Instrument Serif and Instrument Sans.
+    </p>
+    <div class="column">
+      <p>Freelance
+        <br>Remote
+        <br>2024 - present
+        <br><br>
+        Experience Designer
+        <br>September Works
+        <br>2021 - 2024
+        <br><br>
+        UX Research Assistant
+        <br>University of Washington
+        <br>2018 - 2021
+      </p>
+    </div>
+    <div class="column">
+      <img src="images/me.png" width="250" height="250">
+    </div>
+  </div>
+</footer>
+</body>
+</html>

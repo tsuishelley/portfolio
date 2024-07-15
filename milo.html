@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Milo Treats</title>
+    <title>Shelley Tsui</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,26 +21,33 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var acc = document.getElementsByClassName("accordion");
+
     for (var i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
+        acc[i].addEventListener("click", function(event) {
+            var target = event.target;
+            if (target.tagName !== "A" && !target.closest("a")) {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
             }
         });
     }
 
     // Function to set the theme
     function setTheme(theme) {
+        const carrotImgs = document.querySelectorAll('.carrot img');
         if (theme === 'dark') {
             document.body.classList.add('dark-mode');
             toggleButton.innerHTML = '<img src="assets/light-mode.svg">';
+            carrotImgs.forEach(img => img.src = 'images/carrot-dark.svg');
         } else {
             document.body.classList.remove('dark-mode');
             toggleButton.innerHTML = '<img src="assets/dark-mode.svg">';
+            carrotImgs.forEach(img => img.src = 'images/carrot.svg');
         }
     }
 
@@ -56,72 +63,75 @@ document.addEventListener('DOMContentLoaded', function () {
     const savedTheme = localStorage.getItem('theme') || 'light';
     setTheme(savedTheme);
 });
+
 </script>
 <div class="main">
+<body class="project">
     <header>
         <nav>
             <section class="navigation">
-                <div>
-                    <a href="assets/tsui-shelley-resume.pdf" class = "hover-underline-animation" target="_blank">Resume</a>
+                <div class="left-nav">
+                    <a href="index.html" class="hover-underline-animation">Close</a>
                 </div>
-                <div>
-                    <a href="about.html" class = "hover-underline-animation">About</a>
-                </div>
-                <div>
-                    <a href="/" class = "hover-underline-animation">Works</a>
-                </div>
-                <div>
-                    <button id="theme-toggle" class = "hover-underline-animation"><img src="assets/light-mode.svg"></button>
+                <div class="right-nav">
+                    <div>
+                        <a href="assets/tsui-shelley-resume.pdf" class="hover-underline-animation" target="_blank">Resume</a>
+                    </div>
+                    <div>
+                        <a href="https://linkedin.com/in/shelley-tsui" class="hover-underline-animation" target="_blank">LinkedIn</a>
+                    </div>
+                    <div>
+                        <button id="theme-toggle" class="hover-underline-animation"><img src="assets/light-mode.svg"></button>
+                    </div>
                 </div>
             </section>
         </nav>
     </header>
-        <h1 id="project-title">Developing the brand identity for a custom pet supplement company.</h1>
-        <section class="project-section">
-            <div class="project-copy">
-                <h2>Background</h2>
-                <p>Milo Treats was a DTC startup in which I was the lead designer in charge of all brand collateral. Their unfair advantage was to be the only pet supplement brand that developed custom treats tailored to your dog and their unique lifestyle.<br><br>            <p>I designed the visual identity to be refined, playful, but above all else trustworthy to fellow dog owners who want what’s best for their pups. With a playful color scheme and a memorable logo mark, the brand and its application intentionally toes the line between fun and function.</p>
+    <div class="project-container">
+        <div class="sidebar">
+            <p>Milo Treats was a DTC startup in which I was the lead designer in charge of all brand collateral. Their unfair advantage was to be the only pet supplement brand that developed custom treats tailored to your dog and their unique lifestyle.
+                <br><br>
+                I designed the visual identity to be refined, playful, but above all else trustworthy to fellow dog owners who want what’s best for their pups. With a playful color scheme and a memorable logo mark, the brand and its application intentionally toes the line between fun and function.
             </p>
+            <br><br>
             </div>
-            <img src="milo-images/milo-image.png">
-        </section>
-        <section class="project-section-2">
-            <img src="milo-images/brand-guidelines.png">
-        </section>
-        <section class="project-section-2">
-            <img src="milo-images/health-icons.png">
-        </section>
-        <section class="project-section-2">
-            <img src="milo-images/business-cards.png">
-        </section>  
-        <section class="project-section-2">
-            <img src="milo-images/milo-site.png">
-        </section>
-        <section class="project-section-2">
-            <img src="milo-images/milo-tshirt.png">
-        </section>
+        <div class="image-panel">
+            <div class="content">
+                <img src="milo-images/milo-image.png">
+                <img src="milo-images/brand-guidelines.png">
+                <img src="milo-images/health-icons.png">
+                <img src="milo-images/milo-site.png">
+                <img src="milo-images/business-cards.png">
+                <img src="milo-images/milo-tshirt.png">
+            </div>
+        </div>
     </div>
-        <footer>
-        </footer>
-        <div class="ticker-wrap">
-            <div class="ticker">
-              <span class="item-collection-1">
-                <span class="item">Coded & designed with love</span>
-                <span class="item">Coded & designed with love</span>
-                <span class="item">Coded & designed with love</span>
-                <span class="item">Coded & designed with love</span>
-                <span class="item">Coded & designed with love</span>
-                <span class="item">Coded & designed with love</span>
-              </span>
-              <span class="item-collection-2">
-                <span class="item">Coded & designed with love</span>
-                <span class="item">Coded & designed with love</span>
-                <span class="item">Coded & designed with love</span>
-                <span class="item">Coded & designed with love</span>
-                <span class="item">Coded & designed with love</span>
-                <span class="item">Coded & designed with love</span>
-            </span>
+</div>
+    <footer>
+        <div class="about-details">
+            <p>
+              I graduated from the University of Washington with a Bachelor of Design in visual communication and a minor in informatics. I’ve learned to acknowledge and embrace the design process as fluid, never fixed. My favorite feeling is using design to legitimize ideas and make things come to life. Some of my past collaborators include Microsoft, Google, Amazon, Curious VC, and Pioneer Square Labs.
+              <br><br>
+              Most recently I’ve obtained my certificate in front-end development as a complement to my design skills. Right now I’m freelancing, working on my own passion projects, and looking for my next opportunity in visual and/or UX design.
+            </p>
+            <div class="column">
+              <p>Freelance
+                <br>Remote
+                <br>2024 - present
+                <br><br>
+                Experience Designer
+                <br>September Works
+                <br>2021 - 2024
+                <br><br>
+                UX Research Assistant
+                <br>University of Washington
+                <br>2018 - 2021
+              </p>
             </div>
-          <div>
+            <div class="column">
+              <img src="images/me.png" width="250" height="250">
+            </div>
+          </div>
+</footer>
     </body>
  </html>
