@@ -461,8 +461,17 @@ footer div {
 
 @media (max-width: 500px) {
 
+    .container {
+        padding-top:3rem;
+    }
+
+    .project-item1 img, .project-item2 img, .project-item3 img, .project-item4 img {
+        max-height: 50%;
+        max-width: 50%;
+      }
+
     #intro {
-        padding:1.5rem 0 2rem 0;
+        padding:1.5rem 0 0rem 0;
     }
 
     .grid-item1 {
@@ -488,4 +497,9 @@ footer div {
     .navigation div {
         padding-left:1rem;
     }
+
+    footer {
+        margin-top:6rem;
+    }
+
 }
