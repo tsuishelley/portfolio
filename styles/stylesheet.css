@@ -484,4 +484,8 @@ footer div {
     .about-details {
         padding:2rem 1.5rem;
     }
+
+    .navigation div {
+        padding-left:1rem;
+    }
 }
