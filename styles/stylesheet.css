@@ -328,7 +328,7 @@ footer div {
 }
 
 .image-panel {
-    flex: 1.5;
+    flex: 1.75;
     box-sizing: border-box;
     overflow-y: auto;
 }
