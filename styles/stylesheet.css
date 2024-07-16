@@ -82,6 +82,10 @@ body.dark-mode .hover-underline-animation {
     color: white;
 }
 
+body.dark-mode .left-nav a {
+    color:#377EF7;
+}
+
 body.dark-mode .hover-underline-animation:after {
     background-color: white;
 }
