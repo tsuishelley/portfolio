@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mixed Reality Dev Days</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L95KC35WE5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L95KC35WE5');
+</script>
+<body>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var acc = document.getElementsByClassName("accordion");
+
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function(event) {
+            var target = event.target;
+            if (target.tagName !== "A" && !target.closest("a")) {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            }
+        });
+    }
+
+    // Function to set the theme
+    function setTheme(theme) {
+        const carrotImgs = document.querySelectorAll('.carrot img');
+        if (theme === 'dark') {
+            document.body.classList.add('dark-mode');
+            toggleButton.innerHTML = '<img src="assets/light-mode.svg">';
+            carrotImgs.forEach(img => img.src = 'images/carrot-dark.svg');
+        } else {
+            document.body.classList.remove('dark-mode');
+            toggleButton.innerHTML = '<img src="assets/dark-mode.svg">';
+            carrotImgs.forEach(img => img.src = 'images/carrot.svg');
+        }
+    }
+
+    // Dark mode toggle functionality
+    const toggleButton = document.getElementById('theme-toggle');
+    toggleButton.addEventListener('click', function() {
+        let theme = document.body.classList.contains('dark-mode') ? 'light' : 'dark';
+        setTheme(theme);
+        localStorage.setItem('theme', theme);
+    });
+
+    // Apply the theme on initial load
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+});
+
+</script>
+<div class="main">
+<body class="project">
+    <header>
+        <nav>
+            <section class="navigation">
+                <div class="left-nav">
+                    <a href="/">Close</a>
+                </div>
+                <div class="right-nav">
+                    <div>
+                        <a href="assets/tsui-shelley-resume.pdf" class="hover-underline-animation" target="_blank">Resume</a>
+                    </div>
+                    <div>
+                        <a href="https://linkedin.com/in/shelley-tsui" class="hover-underline-animation" target="_blank">LinkedIn</a>
+                    </div>
+                    <div>
+                        <a href="mailto:tsuishelley@gmail.com" class="hover-underline-animation">Contact</a>
+                    </div>
+                    <div>
+                        <button id="theme-toggle" class="hover-underline-animation"><img src="assets/light-mode.svg"></button>
+                    </div>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <div class="project-container">
+        <div class="sidebar">
+            <p>This was a fun design sprint I gave myself to rebrand a site that was local to my beloved city of Federal Way over two days. Using thick squiggly lines meant to allude to the roots of plants and off-whites to soften the contrast between dark green, I crafted a quick identity for the Rhododendren Species Botanical Garden to be both elegant and inviting at the same time.
+            <br><br>
+            If you're ever in the Federal Way area, some of my recommendations include Dash Point State Park, Redondo Beach, Browns Point Lighthouse, and of course "The Rhody"!
+            </p>
+            </div>
+        <div class="image-panel">
+            <div class="content">
+                <img src="rhody-images/rhodysite.png">
+                <img src="rhody-images/rhodycards.png">
+                <img src="rhody-images/rhodytotebag.png">
+                <img src="rhody-images/rhodybrochure.png">
+                <img src="rhody-images/rhodybrochure2.png">
+                <img src="rhody-images/rhodysignage.png">
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="about-details">
+            <p>
+                I graduated from the University of Washington with a Bachelor of Design in visual communication and a minor in informatics. I’ve learned to acknowledge and embrace the design process as fluid, never fixed. Some of my past collaborators include Microsoft, Google, Amazon, Curious VC, and Pioneer Square Labs.
+                <br><br>
+              Most recently I’ve obtained my certificate in front-end development as a complement to my design skills. Right now I’m freelancing, working on my own passion projects, and looking for my next opportunity in visual and/or UX design.
+            </p>
+            <div class="column">
+              <p>Freelance
+                <br>Remote
+                <br>2024 - present
+                <br><br>
+                Experience Designer
+                <br>September Works
+                <br>2021 - 2024
+                <br><br>
+                UX Research Assistant
+                <br>University of Washington
+                <br>2018 - 2021
+              </p>
+            </div>
+            <div class="column">
+              <img src="images/me.png" width="250" height="250">
+            </div>
+          </div>
+</footer>
+    </body>
+ </html>
