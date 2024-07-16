@@ -361,6 +361,10 @@ footer div {
     .column p{
         display:none;
     }
+
+    .about-details {
+        gap:2rem;
+    }
 }
 
 
@@ -388,7 +392,6 @@ footer div {
     .about-details {
         padding:2rem 3rem;
         flex-direction:column;
-        gap:50px;
     }
 
     .about-details p {
@@ -402,6 +405,14 @@ footer div {
 }
 
 @media (max-width: 760px) {
+
+    .desktop {
+        display:none;
+    }
+
+    .mobile {
+        display:block;
+    }
 
     #intro {
         padding:1.5rem 0 3rem 0;
@@ -449,13 +460,7 @@ footer div {
     .grid-item2 {
         display:none;
     }
-    .desktop {
-        display:none;
-    }
 
-    .mobile {
-        display:block;
-    }
     .main {
         padding:0 1.5rem;
     }
