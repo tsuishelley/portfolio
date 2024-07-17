@@ -486,7 +486,11 @@ footer div {
       }
 
     #intro {
-        padding:1.5rem 0 0rem 0;
+        padding:0;
+    }
+
+    .project-container {
+        padding-top:0;
     }
 
     .grid-item1 {
