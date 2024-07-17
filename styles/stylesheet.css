@@ -16,10 +16,13 @@ button#theme-toggle {
 
 body.dark-mode {
     background-color: #1e1e1e;
-    color: white;
+    color: rgba(255, 255, 255, 0.75);
 }
 
-body.dark-mode h1, 
+body.dark-mode h1 {
+    color:white;
+}
+
 body.dark-mode nav a, 
 body.dark-mode p, 
 body.dark-mode p.gray, 
@@ -28,7 +31,7 @@ body.dark-mode .container,
 body.dark-mode h2, 
 body.dark-mode .top-right, 
 body.dark-mode .container a {
-    color: white;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 
@@ -79,7 +82,7 @@ body.dark-mode .container {
 }
 
 body.dark-mode .hover-underline-animation {
-    color: white;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 body.dark-mode .left-nav a {
@@ -87,7 +90,7 @@ body.dark-mode .left-nav a {
 }
 
 body.dark-mode .hover-underline-animation:after {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 /* Main content */
