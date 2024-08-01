@@ -397,7 +397,7 @@ footer div {
     }
     
     .image-panel {
-        flex: 1;
+        flex: 1.75;
     }
 
 
@@ -438,15 +438,15 @@ footer div {
         display:none;
     }
 
+    .project-container {
+        flex-direction:column;
+    }
+
     
 
 }
 
 @media (max-width: 760px) {
-
-    .project-container {
-        flex-direction:column;
-    }
 
     .desktop {
         display:none;
