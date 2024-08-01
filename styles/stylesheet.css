@@ -162,6 +162,7 @@ nav a {
     color: #3E3E3E;
     padding-bottom: 8px;
     text-decoration: none;
+    font-size: .9rem;
 }
 
 nav button {
@@ -263,6 +264,7 @@ p {
     line-height: 150%;
     color: #3E3E3E;
     margin: 0;
+    font-size: .9rem;
 }
 
 p a {
@@ -310,6 +312,7 @@ p a {
     border-top:.5px solid #3e3e3e;
     width: 100%;
     font-family: "Instrument Sans", sans-serif;
+    font-size: .9rem;
     color:#3E3E3E;
     display:flex;
     padding: 20px 0px 20px 0px;
@@ -348,7 +351,7 @@ footer div {
 }
 
 .image-panel {
-    flex: 1.5;
+    flex: 1.75;
     box-sizing: border-box;
     overflow-y: auto;
 }
