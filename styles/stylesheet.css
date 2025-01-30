@@ -232,6 +232,7 @@ h1 {
     cursor:pointer;
 }
 
+
 #cats:hover::after {
     content: url(../images/cats.gif);
     display: block;
