@@ -4,7 +4,9 @@
 html {
     margin:    0 auto;
     max-width: 1600px;
+
 }
+
 
 
 /* General Styles */
@@ -12,12 +14,20 @@ body {
     margin: 0;
     background-color: #F4F4F2;
     transition: background-color 0.3s, color 0.3s;
+    cursor: url('../images/cursor-dot.svg') 7 7, auto;
+    
+
 }
 
+
+a:hover, button:hover, div:hover, span:hover {
+    cursor: inherit;
+  }
+
+  
 button#theme-toggle {
     background: none;
     border: none;
-    cursor: pointer;
 }
 
 body.dark-mode {
@@ -212,7 +222,11 @@ h1 {
 #seattle {
     position: relative;
     display: inline-block;
-    cursor:pointer;
+}
+
+#seattle:hover {
+    cursor: url('../images/cursor-coffee.svg') 20 20, auto;
+
 }
 
 #seattle:hover::after {
@@ -229,9 +243,12 @@ h1 {
 #cats {
     position: relative;
     display: inline-block;
-    cursor:pointer;
 }
 
+#cats:hover {
+    cursor: url('../images/cursor-cat.svg') 20 20, auto;
+
+}
 
 #cats:hover::after {
     content: url(../images/cats.gif);
@@ -241,6 +258,11 @@ h1 {
     left: 50%; /* Center the image horizontally */
     transform: translateX(-50%); /* Adjust for centering */
     z-index: 10; /* Ensure this value is higher than other elements */
+}
+
+#seattle::after,
+#cats::after {
+  pointer-events: none;
 }
 
 .italic-blue {
@@ -309,7 +331,6 @@ p a {
 }
 
 .container a {
-    cursor: pointer;
     border-top:.5px solid #3e3e3e;
     width: 100%;
     font-family: "Instrument Sans", sans-serif;
@@ -530,3 +551,4 @@ footer div {
     }
 
 }
+
