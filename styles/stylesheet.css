@@ -224,10 +224,6 @@ h1 {
     display: inline-block;
 }
 
-#seattle:hover {
-    cursor: url('../images/cursor-coffee.svg') 20 20, auto;
-
-}
 
 #seattle:hover::after {
     content: url(../images/seattle-rain.gif);
@@ -245,10 +241,6 @@ h1 {
     display: inline-block;
 }
 
-#cats:hover {
-    cursor: url('../images/cursor-cat.svg') 20 20, auto;
-
-}
 
 #cats:hover::after {
     content: url(../images/cats.gif);
