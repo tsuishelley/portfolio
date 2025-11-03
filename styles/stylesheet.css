@@ -168,11 +168,12 @@ nav a {
     font-family: 'Instrument Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: .95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     color: #3E3E3E;
     padding-bottom: 8px;
     text-decoration: none;
-    font-size: .9rem;
+    font-size: 12px;
 }
 
 nav button {
